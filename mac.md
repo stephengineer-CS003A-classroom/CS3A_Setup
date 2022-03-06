@@ -1,9 +1,5 @@
 # Mac Instructions</br>
 
-Table of Contents
-
----
-
 - ## [Installing `git`](#mac_installing_git)</br>
 - ## [Installing `cmake`](#mac_installing_cmake)</br>
 - ## [Accepting the assignment](#mac_accepting_the_assignment)</br>
@@ -17,15 +13,17 @@ Table of Contents
 
 <a name="mac_installing_git"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Installing git ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Installing git ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-You may have to install git. Use `homebrew` to [install git](https://git-scm.com/download/mac).
+### Install git
+
+You may have to install git. Use [homebrew](https://brew.sh/) to [install git](https://git-scm.com/download/mac).
 
 ```sh
 $ brew install git
 ```
 
-## Login git
+### Login git
 
 Login git with username and email address:
 

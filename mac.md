@@ -12,9 +12,13 @@
 
 ---
 
+</br>
+
 <a name="mac_installing_git"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Installing git ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+
+</br>
 
 ### Install git
 
@@ -23,6 +27,8 @@ We use [homebrew](https://brew.sh/) to [install git](https://git-scm.com/downloa
 ```sh
 $ brew install git
 ```
+
+</br>
 
 ### Login git
 
@@ -35,9 +41,13 @@ $ git config --global user.email swang03@pasadena.edu
 
 ---
 
+</br>
+
 <a name="mac_installing_cmake"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Installing cmake ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+
+</br>
 
 ### Install cmake
 
@@ -46,6 +56,8 @@ We use homebrew to install [cmake](https://cmake.org/):
 ```sh
 $ brew install cmake
 ```
+
+</br>
 
 ### Check cmake version
 
@@ -61,11 +73,15 @@ If you do not get a response similar to this, then you do not have `cmake` on yo
 
 ---
 
+</br>
+
 <a name="mac_accepting_the_assignment"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Accepting the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
 Here is the **assignment link** for [CS3A]() and here is the link for [CS8]()
+
+</br>
 
 ### Accept assignment
 
@@ -79,6 +95,7 @@ This will create a repo under your github username. The name of repo will be the
 
 > `00_lab_0-stephengineer`
 
+</br>
 
 ### Assignment repo
 
@@ -95,6 +112,8 @@ __Note__: Bookmark this page to know how to get here. We'll need to check in her
 
 ---
 
+</br>
+
 <a name="mac_cloning_the_assignment"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Cloning the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
@@ -106,6 +125,7 @@ __Note__: Bookmark this page to know how to get here. We'll need to check in her
 
 <img src="images/lab0_images/a-07-copy_clone_link.png" alt="copy_clone_link" width="1000"/>
 
+</br>
 
 ### Clone assignment
 
@@ -121,11 +141,13 @@ $ git clone https://github.com/stephengineer-CS003A/00_lab_0-stephengineer.git
 
 ---
 
+</br>
 
 <a name="mac_project_organization"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Project Organization ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
+</br>
 
 ### Open assignment with VSCode
 
@@ -143,7 +165,7 @@ $ code .
 
 </br>
 
-## File system:
+### File system
 
 All the projects in this class will follow the same file organization.
 

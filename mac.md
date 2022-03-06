@@ -5,7 +5,7 @@
 - ### [Accepting the assignment](#mac_accepting_the_assignment)</br>
 - ### [Cloning the assignment](#mac_cloning_the_assignment)</br>
 - ### [Project organization](#mac_project_organization)</br>
-- ### [Quick edit, `status`, `add`, `commit`, & `push`](#mac_quick_edit_status_add_commit_n_push)</br>
+- ### [Git commands](#mac_git_commands)</br>
 - ### [Getting started with the project](#mac_getting_started_with_the_project)</br>
 - ### [Writing tests](#mac_writing_tests)</br>
 - ### [Completing the project](#mac_completing_the_project)</br>
@@ -169,68 +169,51 @@ $ code .
 
 All the projects in this class will follow the same file organization.
 
-On the left panel (Explorer, ) you will find the `main.cpp` on the root folder, and the three most important folders in this directory:
+On the left panel (Explorer) you will find the `main.cpp` on the root folder, and the three most important folders in this directory:
 
-`_tests`: which holds your google test files. The grader will run these files to obtain your score. You will ignore `testA.cpp` for the most part. The bulk of your work will be done in `testB.cpp`.
+- `_tests`: holds your google test files. The grader will run these files to obtain your score. You will ignore `testA.cpp` for the most part. The bulk of your work will be done in `testB.cpp`.
 
-`includes`: contains a folder for each of the libraries / classes your project depends on. In this starter code, you only have a `stub` folder that contains `stub.h` and `stub.cpp`. These files are `#include`d in `testB.cpp`
+- `includes`: contains a folder for each of the libraries/classes your project depends on. In this starter code, you only have a `stub` folder that contains `stub.h` and `stub.cpp`. These files are `#include`d in `testB.cpp`
 
-`build`: is where you go to build and run your project. This is where all your compiled and executable files will end up.
+- `build`: is where you go to build and run your project. This is where all your compiled and executable files will end up.
 
-> <img src="images/lab0_images/02-vscode_file_structure.png" alt="vscode_after_cloning" width="200"/>
-
-</br>
-
-## A look at the test files:
-
-### basic_test.cpp: My sample test goes here.
-
-This is the placeholder file for a sample test file you wilkl be given for each and every project. The purpose of this file is to demonstrate the functionality of the project and for you to make sure that your function signatures and class declarations match the grader's expectations. (otherwise, your projects will not earn a score.)
-
-### testB.cpp: Your tests go here
-
-This is the file that will contain your tests of your own functions and classes. All your test fils that will demonstrate the correctness of your poject are housed here. Part of your grade relies on the quality and success of the tests in this file.
-
-> <img src="images/lab0_images/03-basic_test_testB_generic.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/lab0_images/02-vscode_file_structure.png" alt="vscode_after_cloning" width="200"/>
 
 </br>
 
-## CMakeLists.txt
+### Test files
 
-The github grader as well as your local Mac or linux systems will use the CMakeLists.txt file to build your project.
+#### basic_test.cpp: Prof's sample test go here
 
-### List your cpp files here
+> This is the placeholder file for a sample test file you will be given for each and every project. The purpose of this file is to demonstrate the functionality of the project and for you to make sure that your function signatures and class declarations match the grader's expectations. (otherwise, your projects will not earn a score.)
 
-the `CMakeLists.txt` file is what the cmake program looks at to know how to build your project. How the pieces fit together.
+#### testB.cpp: student's tests go here
 
-When you submit your code, you need to tell it what files are needed to build the test executables.
-
-The grader will also use this file to build your project on the server side (once you submit - push your projects to github)
-
-Please note that you will **only** make changes to the bottom half of this file.
-It's worth mentioning that every **.cpp** file that is used in any of your test files (main, basic_test, testA, testB) will have to be listed here. Notice how the stub.cpp is listed under ADD_EXECUTABLE(testB...)
-
-> <img src="images/lab0_images/04-cmakelists.png" alt="vscode_after_cloning" width="1000"/>
+> This is the file that will contain the tests of your own functions and classes. All your test files that will demonstrate the correctness of your project are housed here. Part of your grade relies on the quality and success of the tests in this file.
 
 </br>
 
-## stub.h, stub.cpp
+### List of cpp files
 
-Not too much to see here. The stub is used in testB to demonstrate how a function will be tested by the googletest framework in `testB.cpp`. All your functions and classes will be housed under their own folder (`stub/`, `array_functions/`, `vector/`, etc.) which will, in turn, go under the `includes/` folder.
+#### stub.h, stub.cpp
 
-> <img src="images/lab0_images/05-include_stub_h_cpp.png" alt="vscode_after_cloning" width="1000"/>
+> Not too much to see here. The stub is used in testB to demonstrate how a function will be tested by the google test framework in `testB.cpp`. All your functions and classes will be housed under their own folder (`stub/`, `array_functions/`, `vector/`, etc.) which will, in turn, go under the `includes/` folder.
 
 </br>
+
+### CMake file
+
+#### CMakeLists.txt
+
+> The github grader as well as your local Mac or linux systems will use the CMakeLists.txt file to build your project.
 
 ---
 
-# <BR><BR><BR><BR><BR>
-
-<a name="mac_quick_edit_status_add_commit_n_push"></a>
-
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Quick edit, `status`, `add`, `commit` & `push` ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
-
 </br>
+
+<a name="mac_git_commands"></a>
+
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Git commands ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
 One of the main tasks in this class is tracking changes made to the project. We need to know what happened when and what changed. This is both for your peace of mind (helps you not lose your project accidentally,) and for me to track your progress throught he course.
 

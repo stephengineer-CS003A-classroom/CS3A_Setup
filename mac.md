@@ -1,161 +1,95 @@
-# Mac Insructions</br>
+# Mac Instructions</br>
+
+Table of Contents
+
+---
 
 - ## [Installing `git`](#mac_installing_git)</br>
 - ## [Installing `cmake`](#mac_installing_cmake)</br>
 - ## [Accepting the assignment](#mac_accepting_the_assignment)</br>
 - ## [Project organization](#mac_project_organization)</br>
-
 - ## [Quick edit, `status`, `add`, `commit`, & `push`](#mac_quick_edit_status_add_commit_n_push)</br>
 - ## [Getting started with the project](#mac_getting_started_with_the_project)</br>
 - ## [Writing tests](#mac_writing_tests)</br>
-- ## [Completing the project](#mac_completing_the_project)
+- ## [Completing the project](#mac_completing_the_project)</br>
 
-# <BR><BR><BR><BR><BR>
-
-# <BR><BR><BR><BR><BR>
+---
 
 <a name="mac_installing_git"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) installing git ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Installing git ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-You may have to install git.
-use `homebrew` to install git.
+You may have to install git. Use `homebrew` to [install git](https://git-scm.com/download/mac).
 
-<br/><br/>
-
-## Tell git who you are:
-
-Once git is installed, you may need to let it know who you are: Give git your name and email address:
-
-```
-git config --global user.name "barkeshli, sassan"
-git config --global user.email sxbarkeshli@pasadena.edu
-
+```sh
+$ brew install git
 ```
 
-# <BR><BR><BR><BR><BR>
+## Login git
+
+Login git with username and email address:
+
+```sh
+$ git config --global user.name "stephengineer"
+$ git config --global user.email swang03@pasadena.edu
+```
+
+---
 
 <a name="mac_installing_cmake"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) installing cmake ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
-
-## is `cmake` installed?
-
-Let's check to see if `cmake` is installed on your system: type `cmake --version` at the commandline.
-
-If you do not get a response similar to this, then you do not have `cmake` on your system and you have to install it.
-
-> <img src="images/lab0_images/b-00-cmake_version.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Installing cmake ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
 ## install `cmake`
 
 We use `homebrew` to install `cmake`:
 
+```sh
+$ brew install cmake
 ```
-brew install cmake
+
+Let's check to see if `cmake` is installed successfully:
+
+```sh
+$ cmake --version
 ```
 
-This will go on and on...
+> <img src="images/lab0_images/b-00-cmake_version.png" alt="cmake version" width="1000"/>
 
-> <img src="images/lab0_images/b-01-brew_install_cmake_1.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-... and on...
-
-</br>
-
-> <img src="images/lab0_images/b-01-brew_install_cmake_2.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-... and on...
-
-</br>
-
-> <img src="images/lab0_images/b-01-brew_install_cmake_3.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-... and on...
-
-</br>
-
-> Finally, cmake is installed!
-> <img src="images/lab0_images/b-01-brew_install_cmake_4.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## check the version of the cmake again:
-
-To make sure `cmake` is intalled correctly, run `cmake --version` again:
-
-> <img src="images/lab0_images/b-00-cmake_version.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
+If you do not get a response similar to this, then you do not have `cmake` on your system and you have to install it.
 
 ---
 
-# <BR><BR><BR><BR><BR>
-
 <a name="mac_accepting_the_assignment"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Accept the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Accepting the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-## Here is the **assignment link** for [CS3A](https://classroom.github.com/a/qidO1KYV) and here is the link for [CS8](https://classroom.github.com/a/DYb_nBnE)
+Here is the **assignment link** for [CS3A]() and here is the link for [CS8]()
 
-# </br>
 
-## Accept assignment page:
+## Accept assignment page
 
-Once you click on the assignment link, we need you to _accept_ the assignment. This will create a repo under your github username.
-But before you click and accept the assignment, let's look at a couple of things a bit more closely.
+Once you click on the assignment link:
 
-> <img src="images/lab0_images/a-00-accept_assignment.png" alt="vscode_after_cloning" width="1000"/>
+1. Select yourself from the list with your name.
+2. Click on the green button, `Accept this assignment`  to accept the assignment.
 
-</br>
+> <img src="images/lab0_images/a-00-accept_assignment.png" alt="accept_assignment" width="1000"/>
 
-## Your repo name:
+This will create a repo under your github username. The name of repo will be the name of assignment followed by your github name.
 
-This is your repo name. The name of the assignment followed by your github name.
+> <img src="images/lab0_images/a-01-your_repo_name.png" alt="repo_name" width="1000"/>
 
-> <img src="images/lab0_images/a-01-your_repo_name.png" alt="vscode_after_cloning" width="1000"/>
 
-</br>
+### Assignment repo
 
-## Accept the assignment
+Once you accept the assignment, github will begin to create your assignment repo. Give it a few seconds:
 
-You will _accept_ the assignment by clicking the green button.
+1. Reload the page.
+2. Click the link of repo.
 
-> <img src="images/lab0_images/a-02-click_to_accept.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/lab0_images/a-04-reload_to_update.png" alt="reload_to_update" width="1000"/>
 
-</br>
-
-## Your assignment repo being created.
-
-Once you accept the assignment, github will begin to creat your assignment repo. You will see this page:
-
-> <img src="images/lab0_images/a-03-waiting_for_setup.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Your assignment repo:
-
-Give it a few seconds, and reload the page and you should see this:
-
-> <img src="images/lab0_images/a-04-reload_to_update.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## look closer:
-
-Take a closer look and youwill see the link to your repo. Click it and you will find your assignment repo:
-
-> <img src="images/lab0_images/a-05-your_repo_address.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
 
 ## Your assignment repo:
 

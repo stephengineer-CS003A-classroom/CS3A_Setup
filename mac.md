@@ -3,6 +3,7 @@
 - ### [Installing `git`](#mac_installing_git)</br>
 - ### [Installing `cmake`](#mac_installing_cmake)</br>
 - ### [Accepting the assignment](#mac_accepting_the_assignment)</br>
+- ### [Cloning the assignment](#mac_cloning_the_assignment)</br>
 - ### [Project organization](#mac_project_organization)</br>
 - ### [Quick edit, `status`, `add`, `commit`, & `push`](#mac_quick_edit_status_add_commit_n_push)</br>
 - ### [Getting started with the project](#mac_getting_started_with_the_project)</br>
@@ -72,7 +73,7 @@ Here is the **assignment link** for [CS3A]() and here is the link for [CS8]()
 1. Select yourself from the list with your name.
 1. Click on the green button, `Accept this assignment`  to accept the assignment.
 
-> <img src="images/lab0_images/a-00-accept_assignment.png" alt="accept_assignment" width="1000"/>
+<img src="images/lab0_images/a-00-accept_assignment.png" alt="accept_assignment" width="1000"/>
 
 This will create a repo under your github username. The name of repo will be the name of assignment followed by your github name.
 
@@ -84,67 +85,61 @@ This will create a repo under your github username. The name of repo will be the
 Once you accepted the assignment, github will begin to create your assignment repo and give it a few seconds, then:
 
 1. Refresh this page to see updates.
-2. Click the link of repo.
+1. Click the link of repo.
 
 <img src="images/lab0_images/a-04-reload_to_update.png" alt="reload_to_update" width="1000"/>
 
 __Note__: Bookmark this page to know how to get here. We'll need to check in here soon.
 
-> <img src="images/lab0_images/a-06-your-repo.png" alt="your-repo" width="1000"/>
+<img src="images/lab0_images/a-06-your-repo.png" alt="your-repo" width="1000"/>
 
 ---
 
-## The **Code** button:
+<a name="mac_cloning_the_assignment"></a>
 
-The green button on the mid-right side that says **Code**, click it and that opens this box:
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Cloning the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-Click the little clipboard and that will copy the link into your clipboard so you can paste it in the next step. You will use this url to clone your repo:
+### Get git link of assignment
 
-> <img src="images/lab0_images/a-07-copy_clone_link.png" alt="vscode_after_cloning" width="1000"/>
+1. Click on the green `Code` button on the mid-right.
+1. Click the little clipboard and that will copy the link into your clipboard so you can paste it in the next step. 
 
-</br>
+<img src="images/lab0_images/a-07-copy_clone_link.png" alt="copy_clone_link" width="1000"/>
 
-## clone the assignment repo:
 
-Before you can work on your project, you will need a local copy of the assignment. This is called **cloning** the repository.
+### Clone assignment
 
-First step is to `cd` into the fodler where you will be storing all your projects.
+Before you can work on your project, you will need a local copy of the assignment. This is called **clone** the repository.
 
-`cd` into your projects folder and clone your project there.
+```sh
+# create and go the the directory of projects
+$ cd /Users/stephen/CS3A/
 
-and then: `git clone [clone link] [destination_folder]`
-
-That's what's happening here. I don't like my folder name to be `lab_00_barkeshli`. I like `lab_00`, so, I give it the new name and that clones the project into a folder named `lab_00`
-
-> <img src="images/lab0_images/a-08-clone_and_rename.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## `cd` into this project folder:
-
-> <img src="images/lab0_images/a-09-cd_into_project_folder.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## `code .`:
-
-this will open VSCode and loads the current folder into it.
-
-> <img src="images/lab0_images/a-10-open_vscode_here.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
+# clone repo
+$ git clone https://github.com/stephengineer-CS003A/00_lab_0-stephengineer.git
+```
 
 ---
 
-# <BR><BR><BR><BR><BR>
 
 <a name="mac_project_organization"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Project Organization: ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Project Organization ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-Once you have cloned the project and you open VSCode, this is what you will see:
 
-> <img src="images/lab0_images/01-vscode_after_cloning.png" alt="vscode_after_cloning" width="1000"/>
+### Open assignment with VSCode
+
+Open VSCode and loads the project folder
+
+```sh
+# go the project folder
+$ cd 00_lab_0-stephengineer
+
+# open VSCode
+$ code .
+```
+
+<img src="images/lab0_images/01-vscode_after_cloning.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 

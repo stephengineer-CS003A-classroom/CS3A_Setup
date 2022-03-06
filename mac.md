@@ -1,19 +1,19 @@
 # Mac Instructions</br>
 
-- ## [Installing `git`](#mac_installing_git)</br>
-- ## [Installing `cmake`](#mac_installing_cmake)</br>
-- ## [Accepting the assignment](#mac_accepting_the_assignment)</br>
-- ## [Project organization](#mac_project_organization)</br>
-- ## [Quick edit, `status`, `add`, `commit`, & `push`](#mac_quick_edit_status_add_commit_n_push)</br>
-- ## [Getting started with the project](#mac_getting_started_with_the_project)</br>
-- ## [Writing tests](#mac_writing_tests)</br>
-- ## [Completing the project](#mac_completing_the_project)</br>
+- ### [Installing `git`](#mac_installing_git)</br>
+- ### [Installing `cmake`](#mac_installing_cmake)</br>
+- ### [Accepting the assignment](#mac_accepting_the_assignment)</br>
+- ### [Project organization](#mac_project_organization)</br>
+- ### [Quick edit, `status`, `add`, `commit`, & `push`](#mac_quick_edit_status_add_commit_n_push)</br>
+- ### [Getting started with the project](#mac_getting_started_with_the_project)</br>
+- ### [Writing tests](#mac_writing_tests)</br>
+- ### [Completing the project](#mac_completing_the_project)</br>
 
 ---
 
 <a name="mac_installing_git"></a>
 
-## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Installing git ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Installing git ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
 ### Install git
 

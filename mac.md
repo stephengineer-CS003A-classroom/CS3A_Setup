@@ -66,38 +66,33 @@ If you do not get a response similar to this, then you do not have `cmake` on yo
 
 Here is the **assignment link** for [CS3A]() and here is the link for [CS8]()
 
+### Accept assignment
 
-## Accept assignment page
-
-Once you click on the assignment link:
-
+1. Click on the assignment link.
 1. Select yourself from the list with your name.
-2. Click on the green button, `Accept this assignment`  to accept the assignment.
+1. Click on the green button, `Accept this assignment`  to accept the assignment.
 
 > <img src="images/lab0_images/a-00-accept_assignment.png" alt="accept_assignment" width="1000"/>
 
 This will create a repo under your github username. The name of repo will be the name of assignment followed by your github name.
 
-> <img src="images/lab0_images/a-01-your_repo_name.png" alt="repo_name" width="1000"/>
+> `00_lab_0-stephengineer`
 
 
 ### Assignment repo
 
-Once you accept the assignment, github will begin to create your assignment repo. Give it a few seconds:
+Once you accepted the assignment, github will begin to create your assignment repo and give it a few seconds, then:
 
-1. Reload the page.
+1. Refresh this page to see updates.
 2. Click the link of repo.
 
-> <img src="images/lab0_images/a-04-reload_to_update.png" alt="reload_to_update" width="1000"/>
+<img src="images/lab0_images/a-04-reload_to_update.png" alt="reload_to_update" width="1000"/>
 
+__Note__: Bookmark this page to know how to get here. We'll need to check in here soon.
 
-## Your assignment repo:
+> <img src="images/lab0_images/a-06-your-repo.png" alt="your-repo" width="1000"/>
 
-Bookmark this page or know how to get here. We'll need to check in here soon.
-
-> <img src="images/lab0_images/a-06-your-repo.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
+---
 
 ## The **Code** button:
 

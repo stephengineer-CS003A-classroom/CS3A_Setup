@@ -17,7 +17,7 @@
 
 ### Install git
 
-You may have to install git. Use [homebrew](https://brew.sh/) to [install git](https://git-scm.com/download/mac).
+We use [homebrew](https://brew.sh/) to [install git](https://git-scm.com/download/mac).
 
 ```sh
 $ brew install git
@@ -38,13 +38,15 @@ $ git config --global user.email swang03@pasadena.edu
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Installing cmake ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-## install `cmake`
+### Install cmake
 
-We use `homebrew` to install `cmake`:
+We use homebrew to install [cmake](https://cmake.org/):
 
 ```sh
 $ brew install cmake
 ```
+
+### Check cmake version
 
 Let's check to see if `cmake` is installed successfully:
 
@@ -52,7 +54,7 @@ Let's check to see if `cmake` is installed successfully:
 $ cmake --version
 ```
 
-> <img src="images/lab0_images/b-00-cmake_version.png" alt="cmake version" width="1000"/>
+<img src="images/lab0_images/b-00-cmake_version.png" alt="cmake version" width="1000"/>
 
 If you do not get a response similar to this, then you do not have `cmake` on your system and you have to install it.
 

@@ -4,7 +4,7 @@
 
 Downloads the files in your github repository onto your local machine
 
-![](clone.png)
+![](./images/git_commands/clone.png)
 
 **`git clone <repo link>`** will create a folder that is named after the repo in your directory and put all the files from online into it.
 
@@ -14,13 +14,13 @@ Shows which files git is tracking and which files have been added to a commit
 **git status**
 
 This is how it will look if you haven't edited any files
-![](status-no-change.png)
+![](./images/git_commands/status-no-change.png)
 
 This is how it will look if you have edited files, but not added them
-![](status-no-add.png)
+![](./images/git_commands/status-no-add.png)
 
 This is how it woll look when you have added a change
-![](status-after-add.png)
+![](./images/git_commands/status-after-add.png)
 
 ### `git add`:
 
@@ -36,7 +36,7 @@ Adds selected files to be committed.
 
 **`git commit -m “comment”`** creates a commit with a descriptive comment or message. It is a good idea to explain what you’ve accomplished when committing. An example of a good comment would be: “Implemented string class”
 
-![](commit-message.png)
+![](./images/git_commands/commit-message.png)
 
 **`git commit`** creates a commit without a comment. Your command prompt may open up a text editor like vim or emacs for you to leave a commit message. If you are not familiar with command line text editors, this can be confusing. To exit out of vim press **esc**, and enter **`:!q` (and enter)** to exit. To exit out of emacs, press **ctrl+x** then **ctrl+c**.
 
@@ -45,7 +45,7 @@ Adds selected files to be committed.
 Uploads all your local repo commits to the github website. Even if you have committed work, it will not be available on github until you push it. Note: Once a commit has been pushed to github, only the time/date it was committed will be shown, not the time/date it was pushed
 
 **`git push`**
-![](push.png)
+![](./images/git_commands/push.png)
 
 ### `.gitignore`
 
@@ -65,7 +65,7 @@ When traversing your file system from the command line, there are certain shortc
 
 **`ls/dir -a`** will show hidden files in the directory
 
-![](ls.png)
+![](./images/git_commands/ls.png)
 
 ### `cd`:
 
@@ -79,6 +79,6 @@ Let’s say your project folder called pointers is in Documents/cs3/ch2. You can
 
 **`cd ..`** will take you up a level from your current position in the file structure. From the previous example, you would use this if you are in your ch2 file and want to move to cs3.
 
-![](cd.png)
+![](./images/git_commands/cd.png)
 
 **`cd`** without a path will take you back to your home directory on Linux/Mac, and will print your current path on Windows

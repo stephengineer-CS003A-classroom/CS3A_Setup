@@ -123,82 +123,69 @@ $ git config --global user.email swang03@pasadena.edu
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Installing cmake ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-## is `cmake` installed?
-
-Let's check to see if `cmake` is installed on your system: type `cmake --version` at the commandline.
-
-If you do not get a response similar to this, then you do not have `cmake` on your system and you have to install it.
-<br/><br/>
-
-> <img src="images/win_images/cm-02-cmake_version.png" alt="vscode_after_cloning" width="1000"/>
-
 </br>
 
-## Download `cmake`
+### Download `cmake`
 
 Download cmake from [here](https://cmake.org/download/). Choose the Windows win64-x64 Installer. You should get an msi with a name similar to this: `cmake-3.19.4-win64-x64.msi`
-<br/><br/>
 
-> <img src="images/win_images/cm-00-download_site.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Install `cmake`
-
-Open/run the executable, and follow the steps to install.
-<br/><br/>
-
-> <img src="images/win_images/cm-01-download_00.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/cm-00-download_site.png" alt="download_cmake" width="1000"/>
 
 </br>
 
-Check I accept the terms in the Liscense Agreement.
-<br/><br/>
+### Install `cmake`
 
-> <img src="images/win_images/cm-01-download_01.png" alt="vscode_after_cloning" width="1000"/>
+Open/run the executable file, and follow steps to install.
+
+<img src="images/win_images/cm-01-download_00.png" alt="install_cmake" width="1000"/>
+
+</br>
+
+Check I accept the terms in the License Agreement.
+
+<img src="images/win_images/cm-01-download_01.png" alt="install_cmake" width="1000"/>
 
 </br>
 
 **Make sure** to select Add CMake to the system PATH for all users. You can create a Desktop icon if you want, but you will not need to use it for this class.
 
-> <img src="images/win_images/cm-01-download_03.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/cm-01-download_03.png" alt="install_cmake" width="1000"/>
 
 </br>
 
-The default install location wshould be C:\Program Files\CMake\
-<br/><br/>
+The default install location should be C:\Program Files\CMake\
 
-> <img src="images/win_images/cm-01-download_04.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/cm-01-download_04.png" alt="install_cmake" width="1000"/>
 
 </br>
 
 Install!
-<br/><br/>
 
-> <img src="images/win_images/cm-01-download_05.png" alt="vscode_after_cloning" width="300"/>
-> <img src="images/win_images/cm-01-download_06.png" alt="vscode_after_cloning" width="300"/>
+<img src="images/win_images/cm-01-download_05.png" alt="install_cmake" width="300"/>
+
+<img src="images/win_images/cm-01-download_06.png" alt="install_cmake" width="300"/>
 
 </br>
 
 When it is done installing, click Finish.
-<br/><br/>
 
-> <img src="images/win_images/cm-01-download_07.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Check the version of the git again:
-
-To make sure `cmake` is intalled correctly, run `cmake --version` again:
-<br/><br/>
-
-> <img src="images/win_images/cm-02-cmake_version.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/cm-01-download_07.png" alt="install_cmake" width="1000"/>
 
 </br>
+
+### Check the version of the git again:
+
+Let's check to see if `cmake` is installed successfully:
+
+```sh
+$ cmake --version
+```
+
+<img src="images/win_images/cm-02-cmake_version.png" alt="cmake_version" width="1000"/>
 
 ---
 
-# <BR><BR><BR><BR><BR>
+</br>
 
 <a name="win_installing_mingw"></a>
 

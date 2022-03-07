@@ -1,75 +1,40 @@
-# Windows Insructions</br>
+# Windows Instructions</br>
 
-- ## [opening commandline](#win_opening_terminal)</br>
-- ## [Installing `git`](#win_installing_git)</br>
-- ## [Installing `cmake`](#win_installing_cmake)</br>
-- ## [Installing `MinGW`](#win_installing_mingw)</br>
-- ## [Accepting the assignment](#win_accepting_the_assignment)</br>
-- ## [Project organization](#win_project_organization)</br>
-
-- ## [Quick edit, `status`, `add`, `commit`, & `push`](#win_quick_edit_status_add_commit_n_push)</br>
-
-- ## [Build and run walkthrough](#win_build_and_run_walkthrough)</br>
-
-- ## [Getting started with the project](#win_getting_started_with_the_project)</br>
-- ## [Writing tests](#win_writing_tests)</br>
-- ## [Completing the project](#win_completing_the_project)
-
-# <BR><BR><BR><BR><BR>
-
-# <BR><BR><BR><BR><BR>
+- ### [Installing `git`](#win_installing_git)</br>
+- ### [Installing `cmake`](#win_installing_cmake)</br>
+- ### [Installing `MinGW`](#win_installing_mingw)</br>
+- ### [Accepting the assignment](#win_accepting_the_assignment)</br>
+- ### [Project organization](#win_project_organization)</br>
+- ### [Git commands](#win_git_commands)</br>
+- ### [Build and run walk through](#win_build_and_run_walkthrough)</br>
+- ### [Getting started with the project](#win_getting_started)</br>
+- ### [Completing the project](#win_completing_the_project)</br>
 
 ---
 
-# <BR><BR><BR><BR><BR>
-
-<a name="win_opening_terminal"></a>
-
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Opening the terminal ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
-
 </br>
-
-> <img src="images/win_images/!com-00-open_command_line.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
----
-
-# <BR><BR><BR><BR><BR>
 
 <a name="win_installing_git"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Installing git ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-## is `git` installed?
-
-Let's check to see if `git` is installed on your system: type `git --version` at the commandline.
-
-If you do not get a response similar to this, then you do not have `git` on your system and you have to install it.
-
-> <img src="images/win_images/git-00-git_version.png" alt="vscode_after_cloning" width="1000"/>
-
 </br>
 
-## Download `git`
+### Download `git`
 
 Download git from [here](https://git-scm.com/download/win). You should get an exe similar to this: `Git-2.30.0.2-64-bit.exe`
-<br/><br/>
 
-> <img src="images/win_images/git-01-download_git_00.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Install `git`
-
-Open/run the executable, and follow the steps to install.
+<img src="images/win_images/git-01-download_git_00.png" alt="download_git_00" width="1000"/>
 
 </br>
+
+### Install `git`
+
+Open/Run the executable file, and follow the steps to install.
 
 Choose Default.
-<br/><br/>
 
-> <img src="images/win_images/git-01-download_git_01.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/git-01-download_git_01.png" alt="download_git_01" width="1000"/>
 
 </br>
 

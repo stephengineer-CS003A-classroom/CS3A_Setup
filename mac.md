@@ -338,7 +338,7 @@ Add two files in the project folder:
 - `array_functions.h`
 - `array_functions.cpp`
 
-<img src="images/mac_images/08-project_folder.png" alt="project_folder" width="1000"/>
+<img src="images/mac_images/08-project_folder.png" alt="project_folder" width="200"/>
 
 </br>
 

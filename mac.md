@@ -2,12 +2,13 @@
 
 - ### [Installing `git`](#mac_installing_git)</br>
 - ### [Installing `cmake`](#mac_installing_cmake)</br>
-- ### [Accepting the assignment](#mac_accepting_the_assignment)</br>
-- ### [Cloning the assignment](#mac_cloning_the_assignment)</br>
-- ### [Project organization](#mac_project_organization)</br>
-- ### [Git commands](#mac_git_commands)</br>
-- ### [Getting started with the project](#mac_getting_started)</br>
-- ### [Completing the project](#mac_completing_the_project)</br>
+
+- ### [Accepting the assignment](#accepting_the_assignment)</br>
+- ### [Cloning the assignment](#cloning_the_assignment)</br>
+- ### [Project organization](#project_organization)</br>
+- ### [Git commands](#git_commands)</br>
+- ### [Getting started with the project](#getting_started)</br>
+- ### [Completing the project](#completing_the_project)</br>
 
 ---
 
@@ -88,7 +89,7 @@ If you do not get a response similar to this, then you do not have `cmake` on yo
 
 </br>
 
-<a name="mac_accepting_the_assignment"></a>
+<a name="accepting_the_assignment"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Accepting the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
@@ -131,7 +132,7 @@ __Note__: Bookmark this page to know how to get here. We'll need to check in her
 
 </br>
 
-<a name="mac_cloning_the_assignment"></a>
+<a name="cloning_the_assignment"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Cloning the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
@@ -160,7 +161,7 @@ $ git clone https://github.com/stephengineer-CS003A/00_lab_0-stephengineer.git
 
 </br>
 
-<a name="mac_project_organization"></a>
+<a name="project_organization"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Project Organization ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
@@ -228,7 +229,7 @@ On the left panel (Explorer) you will find the `main.cpp` on the root folder, an
 
 </br>
 
-<a name="mac_git_commands"></a>
+<a name="git_commands"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Git commands ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
@@ -305,7 +306,7 @@ __Note__: `commit` and `push` often: make sure you `commit` your changes after c
 
 </br>
 
-<a name="mac_getting_started"></a>
+<a name="getting_started"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Getting started ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
@@ -470,7 +471,7 @@ Now, you can implement functions one by one in `array_functions.cpp` and write t
 
 </br>
 
-<a name="mac_completing_the_project"></a>
+<a name="completing_the_project"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Completing the project ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
@@ -690,11 +691,11 @@ You can keep track of the grading status of your project on the assignment page.
 
 <br/>
 
-> <img src="images/win_images/test-04_reslts_github_02.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_02.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-04_reslts_github_04.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_04.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -702,35 +703,35 @@ To see a more in depth output of the autograder test runs, click on the Details 
 
 <br/>
 
-> <img src="images/win_images/test-04_reslts_github_05.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_05.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
 It will take you to this page:
 <br/>
 
-> <img src="images/win_images/test-04_reslts_github_07.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_07.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-04_reslts_github_08.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_08.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-04_reslts_github_10_zoom.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_10_zoom.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-04_reslts_github_11_zoom.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_11_zoom.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-04_reslts_github_12.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_12.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-04_reslts_github_13.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_13.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-04_reslts_github_15.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_15.png" alt="vscode_after_cloning" width="1000"/>

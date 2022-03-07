@@ -3,13 +3,13 @@
 - ### [Installing `git`](#win_installing_git)</br>
 - ### [Installing `cmake`](#win_installing_cmake)</br>
 - ### [Installing `MinGW`](#win_installing_mingw)</br>
-- ### [Accepting the assignment](#win_accepting_the_assignment)</br>
-- ### [Cloning the assignment](#win_cloning_the_assignment)</br>
-- ### [Project organization](#win_project_organization)</br>
-- ### [Git commands](#win_git_commands)</br>
-- ### [Build and run walk through](#win_build_and_run_walkthrough)</br>
-- ### [Getting started with the project](#win_getting_started)</br>
-- ### [Completing the project](#win_completing_the_project)</br>
+
+- ### [Accepting the assignment](#accepting_the_assignment)</br>
+- ### [Cloning the assignment](#cloning_the_assignment)</br>
+- ### [Project organization](#project_organization)</br>
+- ### [Git commands](#git_commands)</br>
+- ### [Getting started with the project](#getting_started)</br>
+- ### [Completing the project](#completing_the_project)</br>
 
 ---
 
@@ -343,9 +343,9 @@ $ g++ --version
 
 </br>
 
-<a name="win_accepting_the_assignment"></a>
+<a name="accepting_the_assignment"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Accept the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Accepting the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
 Here is the **assignment link** for [CS3A]() and here is the link for [CS8]()
 
@@ -384,10 +384,9 @@ __Note__: Bookmark this page to know how to get here. We'll need to check in her
 
 ---
 
-
 </br>
 
-<a name="win_cloning_the_assignment"></a>
+<a name="cloning_the_assignment"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Cloning the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
@@ -416,7 +415,7 @@ $ git clone https://github.com/stephengineer-CS003A/00_lab_0-stephengineer.git
 
 </br>
 
-<a name="win_project_organization"></a>
+<a name="project_organization"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Project Organization ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
@@ -484,7 +483,7 @@ On the left panel (Explorer) you will find the `main.cpp` on the root folder, an
 
 </br>
 
-<a name="win_git_commands"></a>
+<a name="git_commands"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Git commands ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
@@ -561,493 +560,432 @@ __Note__: `commit` and `push` often: make sure you `commit` your changes after c
 
 </br>
 
-<a name="win_build_and_run_walkthrough"></a>
+<a name="getting_started"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) build and run walkthrough ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
-
-</br>
-
-Once your project is open in VS Code, we will do a quick excersise to show you how to run it.
-<br/><br/>
-
-> <img src="images/win_images/run-00-running_compiling_00.png" alt="vscode_after_cloning" width="1000"/>
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Getting started ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
 </br>
 
-</br></br></br>
+### Step 1: Find <a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a>
 
-## The batch files:
-
-The two batch files gtest.bat and build.bat should look like this:
-gtest.bat:
-
-```
-git clone https://github.com/google/googletest.git
-cd googletest && mkdir build && cd build && cmake -G "MinGW Makefiles" .. && make && cd ../../
-```
-
-if this gives you trouble, try replacing make with MinGW32-make like this:
-
-```
-git clone https://github.com/google/googletest.git
-cd googletest && mkdir build && cd build && cmake -G "MinGW Makefiles" .. && MinGW32-make && cd ../../
-```
-
-build.bat:
-
-```
-g++ -std=gnu++11 -o basic_test ../_tests/_test_files/basic_test.cpp -Igoogletest/googletest/include -pthread -Lgoogletest/build/lib -lgtest
-g++ -std=gnu++11 -o testA ../_tests/_test_files/testA.cpp ../includes/stub/stub.cpp -Igoogletest/googletest/include -pthread -Lgoogletest/build/lib -lgtest
-g++ -std=gnu++11 -o testB ../_tests/_test_files/testB.cpp ../includes/stub/stub.cpp -Igoogletest/googletest/include -pthread -Lgoogletest/build/lib -lgtest
-
-```
-
-<a name="win_build_googletesr_framework"></a>
-
-## Build the googletest framework
-
-Before you can run your tests on your program, you must build the googletest framework. This has to be done only once per project **before** you do anything else.
-
-To simplify this process, and the building of your project, a pair of batch files have been written.
-
-The two .bat files you will use to build and compile your project: gtest.bat and build.bat will be included with your startup code for every project.
-
-Navigate into the build folder and run gtest.bat by entering .`\gtest.bat` into the terminal. This will run a series of commands that build the googletest framework for you. This process creates a bunch of files and you do not want these files in the root folder of your project. Running the `gtest.bat` file from `build/` will make sure all your auxilary files are created inside the `build/` folder. The output should look like this.
-<br/><br/>
-
-> <img src="images/win_images/run-00-running_compiling_02.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-build.bat needs to be run every time you make changes to your code. It creates executable files that you can run in the terminal. Run build.bat by entering `.\build.bat` into the VS Code terminal. It will create 3 executable files: testA.exe, testB.exe, and basic_test.exe.
-
-Once your executables have been sucessfully created, you can run the basic_test.exe by entering `.\basic_test.exe` into the VS Code terminal.
-<br/><br/>
-
-> <img src="images/win_images/run-00-running_compiling_03.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-# <BR><BR><BR><BR><BR>
-
-<a name="win_getting_started_with_the_project"></a>
-
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Getting started with the project ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
-
-</br>
-
-## Find <a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a>
-
-</br>
-
-You will be supplied with a <a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a> file. You will copy this file and overwrite the existing _generic_ `basic_test.cpp` in your project folder. After this, you will **never** edit the `basic_test.cpp` file.
+You will be supplied with a <a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a> file. You will copy this file and overwrite the existing _generic_ `basic_test.cpp` in your project folder. After this, you will __NEVER__ edit the `basic_test.cpp` file.
 
 <a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a> demonstrtes the functionality of the project and gives you an opportunity to make sure your function signatures and class declarations match those of the grader.
 You should be able to compile and run the `basic_test.cpp` with your functions.
 
-Pay special attention to the `#include` path at the top. Your file structure has to be **exactly** the same as the one depicted here.
+Pay special attention to the `#include` path at the top. Your file structure has to be __exactly__ the same as the one depicted here.
 
-###### click <a href="./basic_test.cpp" target="_blank">here</a> to download basic_test.cpp if you have not already.
+###### click <a href="./basic_test.cpp" target="_blank">here</a> to download basic_test.cpp if you have not already
 
-<br/><br/>
+<br>
 
-> <img src="images/win_images/test-00-basic_test_00.png" alt="vscode_after_cloning" width="1000"/>
-> </br>
+### Step 2: Create project folder
 
-## Add a new folder to the `includes/` folder.
+Create a new function folder under the `includes/` folde and name this folder to `array_functions`. This is the directory you will add your `.h` and `.cpp` files.
 
-name this folder `array_functions`.
+<br>
 
-This is where you will add your `.h` and `.cpp` files
+### Step 3: Add two project files
 
-<br/><br/>
+Add two files in the project folder:
 
-> <img src="images/win_images/test-00-basic_test_01.png" alt="vscode_after_cloning" width="1000"/>
-> </br>
+- `array_functions.h`
+- `array_functions.cpp`
 
-## Add two files to this folder.
-
-Name these two files `array_functions.h` and `array_functions.cpp`
-
-<br/><br/>
-
-> <img src="images/win_images/test-00-basic_test_02.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/mac_images/08-project_folder.png" alt="project_folder" width="1000"/>
 
 </br>
 
-## Add the function signatures.
+### Step 4: Add the function signatures
 
-add these function signatures to the `array_functions.h` file:
+Add these function signatures to the `array_functions.h`
 
-```
+```c++
+#ifndef ARRAY_FUNCTIONS_H
+#define ARRAY_FUNCTIONS_H
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+//initialize the first size elements of the array
 void _array_init(int a[], int size, int x=0);
+//add append_me to the end of the array and size++
 void _append(int a[], int& size, int append_me);
+//return index of find_me -1 if not found
 int _find(const int a[], int size, int find_me);
+//return item at index pos
 int& _at(int a[], int size, int pos);
-ostream& _print_array(const int a[], int size, ostream& outs = cout);
+//print the array
+void _print_array(const int a[], int size);
 
+#endif // ARRAY_FUNCTIONS_H
 ```
 
 Normally, you will either be given these function signatures or you will _deduce_ them from the code in `basic_test.cpp`
 
-<br/><br/>
-
-> <img src="images/win_images/test-00-basic_test_03.png" alt="vscode_after_cloning" width="1000"/>
-
 </br>
 
-## Write function _stubs_
-
-Function stubs are just function signatures with a return statement if needed.
-
-Function stubs are a quick way to get the project up and running. I find the students who adopt this method in their workflow have an easier time completing projects.
-
-### TIP:
+#### Tips
 
 I normally copy the function signatures and paste them into the `.cpp` file. Then, I replace the `;` at the end of the line with braces (`{}`). Then, I add the returns whenever necessary.
 
-<br/><br/>
+__Note__: removing the default value of x in `_array_init`
 
-> <img src="images/win_images/test-00-basic_test_04.png" alt="vscode_after_cloning" width="1000"/>
-> </br>
+```c++
+#include "array_functions.h"
 
-## Build googletest framework
+void _array_init(int a[], int size, int x) {
+
+}
+
+void _append(int a[], int &size, int append_me) {
+
+}
+
+int _find(const int a[], int size, int find_me) {
+    return 0;
+}
+
+int& _at(int a[], int size, int pos) {
+    return a[0];
+}
+
+void _print_array(const int a[], int size) {
+    cout << endl;
+}
+```
+</br>
+
+### Step 5: Open terminal
+
+If you are using VSCode, you can open the terminal by pressing [`ctrl`]+[`]
+
+[`] is the key in the top left of the keyboard
+
+Using the terminal in this way is very convenient.
 
 </br>
 
-</br>
+### Step 6: Build project
 
-## Go to `build/` and run `gtest.bat`:
+```sh
+# under project folder: ./00_lab_0
+# create build folder
+$ mkdir build
 
-`cd` into the `build/` folder, and from there, run `.\gtest.bat` Remember, you only do this per project. So, if you have already done this in the previous steps, you should skip it.
+# go to build folder
+$ cd build
 
-Now, we are ready to compile our project using `.\build.bat`
+# cmake project
+$ cmake ..
+```
 
-If you followed these steps faithfully, you will have the same syntax errors that I had, namely that all those functions we defined in `array_functions.h` and `.cpp` are **undefined!**
+This will run `cmake` on your _parent_ folder. (that's what `..` means, `cmake ..` means run `cmake` on my parent folder) `cmake` creates a bunch of files and you do not want these files in the root folder of project. Running `cmake` from `build/` will make sure all your auxiliary files are created inside the `build/` folder.
 
-<br/><br/>
-
-> <img src="images/win_images/test-00-basic_test_06.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## `build.bat` errors, zoomed in:
-
-Here is a closer, more readable look at the errors reported by `.\build.bat`
-
-<br/><br/>
-
-> <img src="images/win_images/test-00-basic_test_07_zoom.png" alt="vscode_after_cloning" width="1000"/>
+Hopefully, your `cmake` will run without any problems and it will tell you that "Build files are written to `. . . build/`"
 
 </br>
 
-## the batch file
+### Step 7: Compile project
 
-We will spare you the suspense. The reason for this error is that we never added `array_functions.cpp` to our `build.bat`.
+Now, we are ready to compile project using `make`
 
-A brief explanation of the line of code in buld.bat follows:
-<br/>
-`g++ -std-gnb++11 -o basic_test ../_tests/_test_files/basic_test.cpp ../includes/stub/stub.cpp -Igoogletest/googletest/include`
+```sh
+# under project folder: ./00_lab_0
 
-`basic_test` in this command is the name of the executable that will be created.
+# compile project
+$ make
+```
 
-Starting from `-Igoogletest/googletest/include`, there is nothing you need to change in the line. This is a googletest option.
-
-**All .cpp** files must be listed in the build.bat between the executable name and the googletest options at the end of each command.
-
-<br/><br/>
-
-> <img src="images/win_images/test-00-basic_test_08.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/mac_images/21-make.png" alt="make" width="1000"/>
 
 </br>
 
-## Editing the batch file
+### Step 8: Push changes to Github
 
-<br/><br/>
+Run git commands to commit changes:
 
-> <img src="images/win_images/test-00-basic_test_09_zoom.png" alt="vscode_after_cloning" width="1000"/>
+```sh
+$ git status
+$ git add .
+$ git commit - m "success on make with stubs"
+```
 
-</br>
+__Note__: The importance of having __regular__ `commit`s in your project cannot be overstated. This is a large part of the evaluation of your project by me.
 
-## back at the `CMakeLists.txt`:
-
-Even you, who uses windows and may not have any use for the `CMakeLists.txt` _locally_, **MUST** make sure `CMakeLists.txt` reflects the current state of your project. Otherwise, the grader will not be able to compile and run your project.
-
-Notice that we are missing the `array_functions.cpp` from the `basic_test` `ADD_EXECUTABLE` statement:
-
-So, let's add it...
-<br/><br/>
-
-> <img src="images/win_images/test-00-basic_test_10.png" alt="vscode_after_cloning" width="1000"/>
-> </br>
-
-</br>
-</br>
-
-## Add `array_functions.cpp` to the `ADD_EXECUTABLE(basic_test... )`
-
-**Do not** use commas to separate the files.
-
-**Do NOT** include `.h` files.
-
-Normally, **all** three executables will need all the `.cpp` files
-
-<br/><br/>
-
-> <img src="images/win_images/test-00-basic_test_11.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/mac_images/22-git_add_commit.png" alt="git_add_commit" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-00-basic_test_12.png" alt="vscode_after_cloning" width="1000"/>
-> </br/>
-
-## `.\build.bat` again:
-
-Let's run `.\build` again and pray that...
-
-... and, we have more syntax errors. Default arguments can only be specified in the declration of the function and **not** in the definition.
-
-So, we must remove all those default values for the defalut arguments on every function.
-
-<br/><br/>
-
-> <img src="images/win_images/test-00-basic_test_13.png" alt="vscode_after_cloning" width="1000"/>
-> </br>
-
-## Fix the `_print_array` function...
-
-<br/><br/>
-
-> <img src="images/win_images/test-00-basic_test_14.png" alt="vscode_after_cloning" width="1000"/>
-> </br>
-
-## by removing the default value `= cout`
-
-## Same with `_array_init`:
-
-<br/><br/>
-
-> <img src="images/win_images/test-00-basic_test_15.png" alt="vscode_after_cloning" width="1000"/>
-> </br>
-
-## `.\build.bat` one more time:
-
-and this time it will run successfully.
-
-This is a huge step. We now have a working project eventhough our functions are basically empty.
-
-You can even run `basic_test.exe`. Of course this will not run satisfactorily. You will get mostly garbage. -afterall, we are running on stubs!- but it **does** run!!
-
-<br/><br/>
-
-> <img src="images/win_images/test-00-basic_test_16.png" alt="vscode_after_cloning" width="1000"/>
-> </br>
-
-</br>
-
-## run `git status`, `add`, and `commit` with the message _success on make with stubs_
-
-### The importance of having **regular** `commit`s in your project cannot be overstated. This is a large part of the evaluation of your project by me.
-
-</br></br>
-
-> <img src="images/win_images/test-00-basic_test_18.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-> <img src="images/win_images/test-00-basic_test_19.png" alt="vscode_after_cloning" width="1000"/>
-
-</br><br/>
-
-## Implement `_array_init` and `_print_array`. `testB.cpp` can be seen waiting to host the test functions.
-
-Now, we can go in and implement the functions one by one and write tests for them. These tests will be written in the `testB.cpp` file.
-
-</br>
+Now, you can implement functions one by one in `array_functions.cpp` and write tests in the `testB.cpp` file for it to complete the project.
 
 ---
 
-# <BR><BR><BR><BR><BR>
-
-<a name="win_writing_tests"></a>
-
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Writing Tests: ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
-
-<br/>
 </br>
 
-## `testB`: Our first test:
+<a name="completing_the_project"></a>
 
-After implementing the \_array_init and \_print_array functions, we will write a simple test that will verify that the \_init function works as it should.
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Completing the project ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-The test function is boolean. It returns `true` if the init function works properly and false otgherwise.
+</br>
 
-Call the `_array_init` function and then go through each and every cell and verify that each element is -1.
+### Writing tests
 
-If you find one cell that is not -1, return false.
+After implementing the `_array_init` and `_print_array` functions, we will write a simple test that will verify the function works as it should.
+
+The test function is boolean. It returns `true` if the init function works properly and false otherwise.
+
+Call the `_array_init` function and then go through each and every cell and verify that each element is -1. If you find one cell that is not -1, return false.
 
 Note also that we return `true` at the end of the test function. I do this in every test function I write.
 
-<br/>
+```c++
+bool test_init_array(bool debug=false) {
+  int a[20];
+  int size = 5;
+  const char tabs[] = "\t--------------------------\t";
+  if (debug) {
+    cout << tabs << "size: 5, init array to -1" << endl;
+  }
+  _array_init(a, size, -1);
+  if (debug) {
+    cout << tabs;
+    _print_array(a, size);
+    cout << endl;
+  }
+  for (int i=0; i<size; i++) {
+    if (a[i] != -1) {
+      cout << "FAILED: Expected -1 at a[" << i << "], but found: " << a[i] << endl;
+      return false;
+    }
+  }
+  return true;
+}
+```
 
 </br>
 
-## The `TEST` function:
+### The `TEST`
 
-The `TEST` function is part of the googletest testing framework. To simplify our work, we always use the same format for the `TEST` function: Declare a `bool success` and assign it to the return value of the test function.
+The `TEST` function is part of the google test testing framework. To simplify our work, we always use the same format for the `TEST` function: Declare a `bool success` and assign it to the return value of the test function.
 
 Then, compare `success` with `1` or `true`
 
 A quick word about the two arguments of the `TEST` function:
 
+- test suit
+- test name
+
 The first is the name of the _test suit_ and the second is the name of this very test. Each test suit may contain multiple tests. Later, we will write another test for the `_append` function with the same first argument as this test: `TEST_ARRAY`. By the time we are done, the `TEST_ARRAY` test suite will have three individual tests.
 
-Pay attention to the **naming conventions** for this course: The test suite will be in ALL CAPS with underscores between the words. The test names will be camel case and regular function names are all lower case with underscores.
-<br/><br/>
+Pay attention to the _naming conventions_ for this course:
 
-> <img src="images/win_images/test-01-testb_test_init_00.png" alt="vscode_after_cloning" width="1000"/>
-> </br>
+- __test suite__ will be in __ALL uppercase__ with underscores between the words.
+- __test names__ will be in __camel case__.
+- __test function names__ will be in __ALL lowercase__ with underscores between the words.
 
-## build and RUN!!
+```c++
+//Lord help me! 
+const bool debug = false;
 
-This time, we will run `.\build.bat` successfully and then, we run the `testB` executable by typing `.\testB.exe`
+TEST(TEST_ARRAY, TestInit) {
+  bool success = test_init_array(debug);
+  EXPECT_EQ(success, true);
+}
+```
+
+</br>
+
+### make and run
+
+This time, we will run `make` successfully and then, we run the `testB` executable by typing `./bin/testB`
+
+This means execute the file named `testB` that is located in the `bin` folder which is under the `current folder`. The bin folder is created by `make`
+
+remember that `.` means current folder and is not optional. You __must__ include the dot in the call to execute `testB`
 
 This will display two successful test runs: one for the `stub` test that was already part of the project, and one for the `TestInit` that we just wrote.
 
 This means that our test function returned `true`.
 
-<br/><br/>
-
-> <img src="images/win_images/test-01-testb_test_init_01.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-> <img src="images/win_images/test-01-testb_test_init_03.png" alt="vscode_after_cloning" width="1000"/>
-> </br>
-
-## Implement `_append` and `_at`:
-
-We have thus far implemented `_array_init` and `print_array`. Let's implement `_append` and `_at` as well.
-
-You will _borrow_ my code for this particular lab, but make sure you comment the code very well.
-
-Once we have implemented `_append`, write the test for it in `testB.cpp`. Don't forget to add a `TEST( )` for the `test_append()` function.
-
-<br/><br/>
-
-> <img src="images/win_images/test-02-testb_test_append_00.png" alt="vscode_after_cloning" width="1000"/>
-
-<br/><br/>
-
-Obviously, this is done in the `testB.cpp` file. Again, do not forget to add the `TEST( )` function for `test_at()`
-
-Once again, you will _borrow_ my code for this particular lab, but make sure you comment the code very well.
-
-<br/><br/>
-
-> <img src="images/win_images/test-02-testb_test_append_001.png" alt="vscode_after_cloning" width="1000"/>
-
-<br/><br/>
-
-## `.\build.bat` and run `testB.cpp` again:
-
-Let's `.\build.bat` and run `testB` to make sure our `test_append` and `test_at` pass:
-
-<br/><br/>
-
-> <img src="images/win_images/test-02-testb_test_append_003.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/mac_images/27-make_run_testB.png" alt="make_run_testB" width="1000"/>
 
 ---
 
-# <BR><BR><BR><BR><BR>
+</br>
 
-<a name="win_completing_the_project"></a>
+### Implement all functions
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Completing the project ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+Let's implement all other functions in `array_functions.cpp`:
 
-## Implement the `_find()` function on your own
+```c++
+void _append(int a[], int& size, int append_me) {
+  a[size] = append_me;
+}
 
-You will also write a `test_find()` function. Once you have implemented `_find()` and written the test function for it (don't forget to comment) you are ready to `.\build.bat` and run `testB` once again.
+int _find(const int a[], int size, int find_me) {
+  // Implement the _find() function on your own
+}
 
-Once you have successfully run `testB` with `_find`, you `git add ` and ` commit` your changes. Once again, do not forget to update your CMakeLists.txt file for the autograder.
+int& _at(int a[], int size, int pos) {
+    assert(pos<size);
+    return a[pos];
+}
+```
 
-<br/><br/>
+### Writing all tests
 
-> <img src="images/win_images/test-03_commit_push_00.png" alt="vscode_after_cloning" width="1000"/>
+Let's write all other test in `testB.cpp`:
 
-<br/><br/>
+```c++
+bool test_append(bool debug=false) {
+  int a[20];
+  int size = 5;
+  const char tabs[] = "\t--------------------------\t";
+  if (debug) {
+    cout << tabs << "size: 5, init array to -1" << endl;
+  }
+  _array_init(a, size, -1);
+  if (debug) {
+    cout << tabs;
+    _print_array(a, size);
+    cout << endl;
+  }
+  for (int i = size; i < 10; i++) {
+    _append(a, size, i * 10);
+    if (debug) {
+      cout << tabs;
+      _print_array(a, size);
+      cout << endl;
+    }
+  }
+  if (size != 10) {
+    cout << "FAILED: Expected size to be 10, but found: " << size << endl;
+    return false;
+  }
+  if (a[size-1] != (size-1)*10) {
+    cout << "FAILED: Expected: " << (size-1)*10 
+         << " at a[" << size-1 << "], but found: " << a[size-1] << endl;
+    return false;
+  }
+  return true;
+}
 
-## Finally, we can run `basic_test.cpp`:
+bool test_at(bool debug=false) {
+  int a[20];
+  int size = 5;
+  const char tabs[] = "\t--------------------------\t";
+  if (debug) {
+    cout << tabs << "size: 5, init array to -1" << endl;
+  }
+  _array_init(a, size, -1);
+  if (debug) {
+    cout << tabs;
+    _print_array(a, size);
+    cout << endl;
+  }
+  int at_i;
+  for (int i=0; i<size; i++) {
+    at_i = _at(a, size, i);
+    if (at_i != -1) {
+      cout << "FAILED: Expected at{i} to return -1, but found: " << at_i << endl;
+      return false;
+    }
+  }
+  _at(a, size, 3) = 300;
+  at_i = _at(a, size, 3);
+  if (at_i != 300) {
+    cout << "FAILED: Expected to find 300 at{3}, but found: " << at_i << endl;
+    return false;
+  }
+  return true;
+}
+
+bool test_find(bool debug=false) {
+  // Implement the _find() test function on your own
+}
+```
+
+Obviously, you are done in the testB.cpp file, do not forget to add the `TEST()`  for all test functions.
+
+Let's `make` and run `testB` to make sure all test functions pass.
+
+<img src="images/mac_images/30-PASSED_three_tests.png" alt="PASSED_three_tests" width="1000"/>
+
+</br>
+
+Once you have successfully run `testB`, you can run git commands to commit changes:
+
+```sh
+# under project folder: ./00_lab_0
+
+$ git status
+$ git add .
+$ git commit - m "success on make with stubs"
+$ git push origin master
+```
+
+</br>
+
+### Run `basic_test.cpp`:
 
 Now that we have implemented all the functions that are used in `basic_test.cpp`, we can `make` and run this file.
 
-I cannot overemphasize how important it is for this test to be able to compile and run **without** your editing it in any way. If your project cannot compile and run `basic_test`, the grader will not be able to run your project.
+I cannot overemphasize how important it is for this test to be able to compile and run __without__ your editing it in any way. If your project cannot compile and run `basic_test`, the grader will not be able to run your project.
 
-<br/><br/>
-
-> <img src="images/win_images/test-03_commit_push_01.png" alt="vscode_after_cloning" width="1000"/>
-
-<br/><br/>
-
-## `git add` and the final `git commit`
-
-Let's go back to the root directory by typing `cd ..` - remember that `..` means parent directory. `cd ..` means change directory to the parent.
-
-My commit message will let me know what stage of the development I am in. I have just PASSED both the `basic_test` and `testB`
-
-<br/><br/>
-
-> <img src="images/win_images/test-04_reslts_github_01.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/mac_images/31-PASSED-basic_test.png" alt="PASSED-basic_test" width="1000"/>
 
 </br>
 
-## Autograder Status
+# Autograder Status
 
-You can keep track of the grading status of your project on the assigmment page. A yellow dot means that the tests are still being compiled and run by the autograder.This shouldn't take more than a minute or two. You can refresh the page to update the status. A green checkmark neans that all your tests have passed. A red x means that at least one test failed.
+You can keep track of the grading status of your project on the assignment page. A yellow dot means that the tests are still being compiled and run by the autograder.This shouldn't take more than a minute or two. You can refresh the page to update the status. A green checkmark means that all your tests have passed. A red x means that at least one test failed.
 
-<br/><br/>
+<br/>
 
-> <img src="images/win_images/test-04_reslts_github_02.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_02.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-04_reslts_github_04.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_04.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
 To see a more in depth output of the autograder test runs, click on the Details link:
 
-<br/><br/>
+<br/>
 
-> <img src="images/win_images/test-04_reslts_github_05.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_05.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
 It will take you to this page:
-<br/><br/>
+<br/>
 
-> <img src="images/win_images/test-04_reslts_github_07.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-> <img src="images/win_images/test-04_reslts_github_08.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_07.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-04_reslts_github_10_zoom.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_08.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-04_reslts_github_11_zoom.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_10_zoom.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-04_reslts_github_12.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_11_zoom.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-04_reslts_github_13.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_12.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
-> <img src="images/win_images/test-04_reslts_github_15.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/win_images/test-04_results_github_13.png" alt="vscode_after_cloning" width="1000"/>
+
+</br>
+
+> <img src="images/win_images/test-04_results_github_15.png" alt="vscode_after_cloning" width="1000"/>

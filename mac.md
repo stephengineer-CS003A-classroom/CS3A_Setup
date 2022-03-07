@@ -291,217 +291,175 @@ __Note__: `commit` and `push` often: make sure you `commit` your changes after c
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Getting started ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-## Find <a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a>
+</br>
 
-You will be supplied with a <a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a> file. You will copy this file and overwrite the existing _generic_ `basic_test.cpp` in your project folder. After this, you will **never** edit the `basic_test.cpp` file.
+### Step 1: Find <a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a>
+
+You will be supplied with a <a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a> file. You will copy this file and overwrite the existing _generic_ `basic_test.cpp` in your project folder. After this, you will __NEVER__ edit the `basic_test.cpp` file.
 
 <a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a> demonstrtes the functionality of the project and gives you an opportunity to make sure your function signatures and class declarations match those of the grader.
 You should be able to compile and run the `basic_test.cpp` with your functions.
 
-Pay special attention to the `#include` path at the top. Your file structure has to be **exactly** the same as the one depicted here.
+Pay special attention to the `#include` path at the top. Your file structure has to be __exactly__ the same as the one depicted here.
 
-###### click <a href="./basic_test.cpp" target="_blank">here</a> to download basic_test.cpp if you have not already.
+###### click <a href="./basic_test.cpp" target="_blank">here</a> to download basic_test.cpp if you have not already
 
 <br>
 
-> <img src="images/lab0_images/06-basic_test_testA_copied.png" alt="vscode_after_cloning" width="1000"/>
+### Step 2: Create project folder
+
+Create a new function folder under the `includes/` folde and name this folder to `array_functions`. This is the directory you will add your `.h` and `.cpp` files.
+
+<br>
+
+### Step 3: Add two project files
+
+Add two files in the project folder:
+
+- `array_functions.h`
+- `array_functions.cpp`
+
+<img src="images/lab0_images/08-project_folder.png" alt="project_folder" width="1000"/>
 
 </br>
 
-## Add a new folder to the `includes/` folder.
+### Step 4: Add the function signatures
 
-name this folder `array_functions`.
+Add these function signatures to the `array_functions.h`
 
-This is where you will add your `.h` and `.cpp` files
+```c++
+#ifndef ARRAY_FUNCTIONS_H
+#define ARRAY_FUNCTIONS_H
 
-> <img src="images/lab0_images/07-add_array_function_folder.png" alt="vscode_after_cloning" width="1000"/>
+#include <iostream>
+#include <iomanip>
 
-</br>
+using namespace std;
 
-## Add two files to this folder.
-
-Name these two files `array_functions.h` and `array_functions.cpp`
-
-> <img src="images/lab0_images/08.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Add the function signatures.
-
-add these function signatures to the `array_functions.h` file:
-
-```
+//initialize the first size elements of the array
 void _array_init(int a[], int size, int x=0);
+//add append_me to the end of the array and size++
 void _append(int a[], int& size, int append_me);
+//return index of find_me -1 if not found
 int _find(const int a[], int size, int find_me);
+//return item at index pos
 int& _at(int a[], int size, int pos);
-ostream& _print_array(const int a[], int size, ostream& outs = cout);
+//print the array
+void _print_array(const int a[], int size);
 
+#endif // ARRAY_FUNCTIONS_H
 ```
 
 Normally, you will either be given these function signatures or you will _deduce_ them from the code in `basic_test.cpp`
 
-> <img src="images/lab0_images/09-array_functions_h.png" alt="vscode_after_cloning" width="1000"/>
-
 </br>
 
-## Write function _stubs_
-
-Function stubs are just function signatures with a return statement if needed.
-
-Function stubs are a quick way to get the project up and running. I find the students who adopt this method in their workflow have an easier time completing projects.
-
-### TIP:
+#### Tips
 
 I normally copy the function signatures and paste them into the `.cpp` file. Then, I replace the `;` at the end of the line with braces (`{}`). Then, I add the returns whenever necessary.
 
-> <img src="images/lab0_images/10-array_functions_cpp_stubs.png" alt="vscode_after_cloning" width="1000"/>
+__Note__: removing the default value of x in `_array_init`
 
+```c++
+#include "array_functions.h"
+
+void _array_init(int a[], int size, int x) {
+
+}
+
+void _append(int a[], int &size, int append_me) {
+
+}
+
+int _find(const int a[], int size, int find_me) {
+    return 0;
+}
+
+int& _at(int a[], int size, int pos) {
+    return a[0];
+}
+
+void _print_array(const int a[], int size) {
+    cout << endl;
+}
+```
 </br>
 
-## Open terminal:
+### Step 5: Open terminal
 
-If you are using VSCode, you can open the terminal by pressing [ctrl][`]
+If you are using VSCode, you can open the terminal by pressing [`ctrl`]+[`]
 
-[`] is the key in the top left of the keyboard under [~]
+[`] is the key in the top left of the keyboard
 
 Using the terminal in this way is very convenient.
 
-> <img src="images/lab0_images/11-open_terminal.png" alt="vscode_after_cloning" width="1000"/>
-
 </br>
 
-## Go to `build/` and run `cmake`:
+### Step 6: Build project
 
-`cd` into the `build/` folder, and from there, run `cmake ..`
+```sh
+# under project folder: ./00_lab_0
+# create build folder
+$ mkdir build
 
-This will run `cmake` on your _parent_ folder. (that's what `..` means. `cmake ..` means run `cmake` on my parent folder.)`cmake` creates a bunch of files and you do not want these files in the root folde of your project. Running `cmake` from `build/` will make sure all your auxilary files are created inside the `build/` folder.
+# go to build folder
+$ cd build
+
+# cmake project
+$ cmake ..
+```
+
+This will run `cmake` on your _parent_ folder. (that's what `..` means, `cmake ..` means run `cmake` on my parent folder) `cmake` creates a bunch of files and you do not want these files in the root folder of project. Running `cmake` from `build/` will make sure all your auxiliary files are created inside the `build/` folder.
 
 Hopefully, your `cmake` will run without any problems and it will tell you that "Build files are written to `. . . build/`"
 
-Now, we are ready to compile our project using `make`
+</br>
 
-> <img src="images/lab0_images/12-cmake_dot_dot.png" alt="vscode_after_cloning" width="1000"/>
+### Step 7: Compile project
+
+Now, we are ready to compile project using `make`
+
+```sh
+# under project folder: ./00_lab_0
+
+# compile project
+$ make
+```
+
+<img src="images/lab0_images/21-make.png" alt="make" width="1000"/>
 
 </br>
 
-## `make`
+### Step 8: Push changes to Github
 
-type `make` to compile your project:
+Run git commands to push changes to remote repo:
 
-If you followed these steps faithfully, you will have the same syntax errors that I had, namely that all those functions we defined in `array_functions.h` and `.cpp` are **undefined!**
+```sh
+$ git status
+$ git add .
+$ git commit - m "success on make with stubs"
+$ git push origin master
+```
 
-We will spare you the suspense. The reason for this error is that we never added `array_functions.cpp` to our `CMakeLists.txt`. Remember that **all .cpp** files must be listed in the CMakeLists.txt under `ADD_EXECUTABLE`
+__Note__: The importance of having __regular__ `commit`s in your project cannot be overstated. This is a large part of the evaluation of your project by me.
 
-> <img src="images/lab0_images/13-make.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## `make` errors, zoomed in:
-
-Here is a closer, more readable look at the errors reported by `make`
-
-> <img src="images/lab0_images/14-syntax erros.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/lab0_images/22-git_add_commit.png" alt="git_add_commit" width="1000"/>
 
 </br>
 
-## back at the `CMakeLists.txt`:
-
-Notice that we are missing the `array_functions.cpp` from the `basic_test` `ADD_EXECUTABLE` statement:
-
-So, let's add it...
-
-> <img src="images/lab0_images/15-cmakelist_where to add.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Add `array_functions.cpp` to the `ADD_EXECUTABLE(basic_test... )`
-
-**Do not** use commas to separate the files.
-
-**Do NOT** include `.h` files.
-
-Normally, **all** three executables will need all the `.cpp` files
-
-> <img src="images/lab0_images/16-cmakelist_add_cpp.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## `make` again:
-
-Let's run `make` again and pray that...
-
-... and, we have more syntax errors. Default arguments can only be specified in the declration of the function and **not** in the definition.
-
-So, we must remove all those default values for the defalut arguments on every function.
-
-> <img src="images/lab0_images/17-fix_syntax_errors.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Fix the `_print_array` function...
-
-> <img src="images/lab0_images/18-default_arg.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## by removing the default value `= cout`
-
-> <img src="images/lab0_images/19-default_arg.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Same with `_array_init`:
-
-> <img src="images/lab0_images/20-default_arg.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-> <img src="images/lab0_images/21.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## `make` one more time:
-
-and this time it will run successfully.
-
-This is a huge step. We now have a working project eventhough our functions are basically empty.
-
-You can even run the `basic_test` from the `bin/` directory. Of course this will not run satisfactorily. You will get mostly garbage. -afterall, we are running on stubs!- but it **does** run!!
-
-> <img src="images/lab0_images/21x-make_run_basic_tet_with_empty_stubs.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## run `git status`, `add`, and `commit` with the message _success on make with stubs_
-
-### The importance of having **regular** `commit`s in your project cannot be overstated. This is a large part of the evaluation of your project by me.
-
-</br></br>
-
-> <img src="images/lab0_images/22-git_add_commit.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Implement `_array_init` and `_print_array`. `testB.cpp` can be seen waiting to host the test functions.
-
-Now, we can go in and implement the functions one by one and write tests for them. These tests will be written in the `testB.cpp` file.
-
-</br>
-
-> <img src="images/lab0_images/24-testB_before_edit.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
+Now, you can implement functions one by one in `array_functions.cpp` and write tests in the `testB.cpp` file for it.
 
 ---
 
-# <BR><BR><BR><BR><BR>
+</br>
 
 <a name="mac_writing_tests"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Writing Tests: ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Writing tests ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-## `testB`: our first test:
+</br>
+
+### The first test
 
 After implementing the \_array_init and \_print_array functions, we will write a simple test that will verify that the \_init function works as it should.
 

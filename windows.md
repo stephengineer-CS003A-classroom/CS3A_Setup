@@ -24,7 +24,7 @@
 
 Download git from [here](https://git-scm.com/download/win). You should get an exe similar to this: `Git-2.30.0.2-64-bit.exe`
 
-<img src="images/win_images/git-01-download_git_00.png" alt="download_git_00" width="1000"/>
+<img src="images/win_images/git-01-download_git_00.png" alt="download_git" width="1000"/>
 
 </br>
 
@@ -34,35 +34,29 @@ Open/Run the executable file, and follow the steps to install.
 
 Choose Default.
 
-<img src="images/win_images/git-01-download_git_01.png" alt="download_git_01" width="1000"/>
+<img src="images/win_images/git-01-download_git_01.png" alt="download_git" width="1000"/>
 
 </br>
 
 Choose Git Credential Manager Core.
-<br/><br/>
 
-> <img src="images/win_images/git-01-download_git_02.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/git-01-download_git_02.png" alt="download_git" width="1000"/>
 
 </br>
 
 Select Only show new options if not selected, and click next.
-<br/><br/>
 
-> <img src="images/win_images/git-01-download_git_03.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
+<img src="images/win_images/git-01-download_git_03.png" alt="download_git" width="1000"/>
 
 Choose Let git decide.
-<br/><br/>
 
-> <img src="images/win_images/git-01-download_git_04.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/git-01-download_git_04.png" alt="download_git" width="1000"/>
 
 </br>
 
 Choose Use OpenSSH.
-<br/><br/>
 
-> <img src="images/win_images/git-01-download_git_05.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/git-01-download_git_05.png" alt="download_git" width="1000"/>
 
 </br>
 

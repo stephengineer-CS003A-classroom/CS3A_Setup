@@ -37,6 +37,8 @@ To make sure git is installed correctly
 $ git --version
 ```
 
+<img src="images/mac_images/b-00-git_version.png" alt="git version" width="1000"/>
+
 </br>
 
 ### Login git

@@ -6,7 +6,7 @@
 - ### [Cloning the assignment](#mac_cloning_the_assignment)</br>
 - ### [Project organization](#mac_project_organization)</br>
 - ### [Git commands](#mac_git_commands)</br>
-- ### [Getting started with the project](#mac_getting_started_with_the_project)</br>
+- ### [Getting started with the project](#mac_getting_started)</br>
 - ### [Writing tests](#mac_writing_tests)</br>
 - ### [Completing the project](#mac_completing_the_project)</br>
 
@@ -215,150 +215,81 @@ On the left panel (Explorer) you will find the `main.cpp` on the root folder, an
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Git commands ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-One of the main tasks in this class is tracking changes made to the project. We need to know what happened when and what changed. This is both for your peace of mind (helps you not lose your project accidentally,) and for me to track your progress throught he course.
+One of the main tasks in this class is tracking changes made to the project. We need to know what happened when and what changed. This is both for your peace of mind (helps you not lose your project accidentally) and for me to track your progress through the course. We use [git](https://git-scm.com/) to track changes.
 
-We use **git** to track changes.
-
-**Here**, we will make some small change to one of our files and walk through the entire process of tracking that change with `git`, just so you can get used to it.
-
-## `git status`
-
-let's run `git status`. look at the response: It says there are not changes as of yet. That's correct, isn't it. We have not made any changes.
-
-> <img src="images/lab0_images/c-00-git_status_1.png" alt="vscode_after_cloning" width="1000"/>
+__Here__, we will make some small change to one of our files and walk through the entire process of tracking that change with `git`, just so you can get used to it.
 
 </br>
 
-## Edit the README.md
+### Check status
 
-Enter your name in the README.md and save it.
+```sh
+# show the working tree status
+$ git status
+```
 
-> <img src="images/lab0_images/c-01-edit_readme.png" alt="vscode_after_cloning" width="1000"/>
+Look at the response: It says there is not change as of yet. That's correct. We have not made any changes.
 
-</br>
-
-## `git status` again:
-
-if you run `git status` again, you will see that git has kept track of our changes. this time, it says that the file `README.md` has changed. But it says that the file is not _staged_ for commit.
-
-Think of it this way... There are four zones:
-</br></br>
-
-[changes not staged]
-
----- `git add`--->
-
-[staged changes, but not committed]
-
----- `git commit`--->
-
-[committed changes]
-
----- `git push`--->
-
-[pushed, or synched with remote site]
-
-You go from zone to zone by the commands listed above.
-
-> <img src="images/lab0_images/c-02-git_status_2.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/lab0_images/c-00-git_status_1.png" alt="git_status" width="1000"/>
 
 </br>
 
-## `git add` and then, `git status` again:
+### Edit the README.md
+1. Enter your name in the README.md and save it.
+2. `$ git status` again.
 
-In order to _stage_ the changes for `commit`, Enter `git add README.md`. This will stage the file.
-
-do `get status` again. Now, you see that `README.md` has been _staged_
-
-> <img src="images/lab0_images/c-03-git_add_status_again.png" alt="vscode_after_cloning" width="1000"/>
+After you run `$ git status` again, you will see that git has kept track of our changes. This time, it says that the file `README.md` has changed, but the `changes is not staged for commit`.
 
 </br>
 
-## `commit` your changes:
+### Git workflow
 
-You `commit` your changes to permanently record these changes to `git`. If somehow you ruin your project (as we all have done from time to time,) you can _revert_ to this state of your project.
+As usual, one picture is worth a thousand words:
 
-`commit`ting is like _saving_ your changes to `git`
+<img src="images/lab0_images/c-00-git_workflow.png" alt="git_workflow" width="1000"/>
 
-Enter `git commit -m "[explain what you just did, in your own words]"`
 
-Here,`-m` is a switch that tells `git` that you will be typing a message to document what this `commit` was for. We want this message to be concise and descriptive of the work that is being recorded.
+You go from zone to zone by the [git commands](https://git-scm.com/docs).
 
-Try typing in your own message in your own words.
+```sh
+# show the working tree status
+$ git status
 
-> <img src="images/lab0_images/c-04-git_commit.png" alt="vscode_after_cloning" width="1000"/>
+# to see differences
+$ git diff
 
-</br>
+# to stage all different files
+$ git add .
 
-## Has Github assignment repo changed?
+# record changes to the repository
+$ git commit -m "comments of changes"
 
-Take a look at your assignment repo on your browser. You will see that eventhough you have committed your changes, Github does not know about them!
+# update code to remote repo
+$ git push origin master
 
-`commit`ting only records your changes on your local machine.
-
-> <img src="images/lab0_images/d-00-commit_gh_has_not_changed.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## What is my local `branch` name?
-
-If we want Github to know about our changes, we must `push` them to Github. But before you do, let's find out what our current _branch_ is.
-
-For me, the branch name is `master` as evidenced by these images.
-
-Your bash prompt on your terminal:
-
-> <img src="images/lab0_images/d-02-git_prompt.png" alt="vscode_after_cloning" width="200"/>
-> </br>
-
-the branch name on your Github repo page:
-
-> <img src="images/lab0_images/d-06-branch_name.png" alt="vscode_after_cloning" width="300"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; > <img src="images/lab0_images/d-06-branch_name_zoom.png" alt="vscode_after_cloning" width="300"/>
+# show commit logs
+$ git log
+```
 
 </br>
 
-</br>
+Now, Github knows about your changes, take a look at your project repo on Github to see how the changes you made to README.md.
+
+__Note__: `commit` and `push` often: make sure you `commit` your changes after completion of __every__ task. Remeber, `commit`s are the record of your progress. You will be graded on your commits and push your changes frequently.
 
 </br>
 
-## `git push`:
+### Bonus
 
-Since my branch name is `master`, I will issue the command `git push origin master` which means push to `origin`, which is my github remote name, from `master` which is my local branch name. For you, your branch namge might be `main`, so, your commmand will be `git push origin main`:
-
-If your command is successful, you will get a response similar to this:
-
-> <img src="images/lab0_images/d-01-push_origin_master.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Now, Github knows about our changes:
-
-Take a look at your project repo on Github. See how the changes you made to README.md shows on your repo:
-
-> <img src="images/lab0_images/d-05-gh_changed.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-</br>
-
-## `commit` and `push` often:
-
-Make sure you `commit` your changes after completion of **every** task. Remeber, `commit`s are the record of your progress. You will be graded on your commits. And push your changes frequently.
-<BR><BR>
-<BR><BR>
-<BR><BR>
-<BR><BR>
-
-## Bonus: `git log`
-
-Enter `git log` and see what the response is. What does this command do?
+- Try to learn git [branches](https://www.atlassian.com/git/tutorials/using-branches).
 
 ---
 
-# <BR><BR><BR><BR><BR>
+</br>
 
-<a name="mac_getting_started_with_the_project"></a>
+<a name="mac_getting_started"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Getting started with the project ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Getting started ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
 ## Find <a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a>
 

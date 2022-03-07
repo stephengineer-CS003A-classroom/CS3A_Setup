@@ -520,9 +520,12 @@ Pay attention to the _naming conventions_ for this course:
 - __test function names__ will be in __ALL lowercase__ with underscores between the words.
 
 ```c++
+//Lord help me! 
+const bool debug = false;
+
 TEST(TEST_ARRAY, TestInit) {
-  bool success = test_stub(debug);
-  EXPECT_EQ(success, test_init_array());
+  bool success = test_init_array(debug);
+  EXPECT_EQ(success, true);
 }
 ```
 

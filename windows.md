@@ -135,7 +135,7 @@ Download cmake from [here](https://cmake.org/download/). Choose the Windows win6
 
 ### Install `cmake`
 
-Open/run the executable file, and follow steps to install.
+Open/Run the executable file, and follow the steps to install.
 
 <img src="images/win_images/cm-01-download_00.png" alt="install_cmake" width="1000"/>
 
@@ -191,161 +191,156 @@ $ cmake --version
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Install MinGW ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-## is `MinGW` installed?
+</br>
 
-Let's check to see if `g++` is installed on your system: type `g++ --version` at the commandline.
+### Is `MinGW` installed?
+
+Let's check to see if `g++` is installed on your system:
+
+```sh
+$ g++ --version
+```
 
 If you do not get a response similar to this, then you do not have `g++` and/or `MinGW` on your system and you have to install it.
-<br/><br/>
 
-> <img src="images/win_images/g++-00-g++_version.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Download `MinGW`
-
-Download cmake from [here](https://sourceforge.net/projects/mingw/files/). You should get an exe named similar to this: `mingw-get-setup (1).exe`
+<img src="images/win_images/g++-00-g++_version.png" alt="g++_version" width="1000"/>
 
 </br>
 
-## Install `MinGW`/`g++`
+### Download `MinGW`
 
-Open/run the executable, and follow the steps to install.
-<br/><br/>
-
-> <img src="images/win_images/g++-01-download_00.png" alt="vscode_after_cloning" width="300"/>
-> <img src="images/win_images/g++-01-download_01.png" alt="vscode_after_cloning" width="300"/>
+Download cmake from [here](https://sourceforge.net/projects/mingw/files/). You should get an exe named similar to this: `mingw-get-setup.exe`
 
 </br>
 
-The default Installation location should be C:/MinGW. Once again, you can add a Desktop shortcut, but it will not be neccesary for this class.
-<br/><br/>
+### Install `MinGW`/`g++`
 
-> <img src="images/win_images/g++-01-download_02.png" alt="vscode_after_cloning" width="1000"/>
+Open/Run the executable file, and follow the steps to install.
 
-</br>
+<img src="images/win_images/g++-01-download_00.png" alt="g++_install" width="300"/>
 
-If you get a warning that MinGW is already installed, you can either reinstall and continue with this walkthrough or choose Run Now and skip to the steps below with the MinGW Install Manager.
-<br/><br/>
-
-> <img src="images/win_images/g++-01-download_03.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/g++-01-download_01.png" alt="g++_install" width="300"/>
 
 </br>
 
-Installing..
-<br/><br/>
+The default Installation location should be `C:/MinGW`. Once again, you can add a Desktop shortcut, but it will not be necessary for this class.
 
-> <img src="images/win_images/g++-01-download_04.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/g++-01-download_02.png" alt="g++_install" width="1000"/>
+
+</br>
+
+If you get a warning that MinGW is already installed, you can either reinstall and continue with this walk through or choose `Run Now` and skip to the steps below with the MinGW Install Manager.
+
+<img src="images/win_images/g++-01-download_03.png" alt="g++_install" width="1000"/>
+
+</br>
+
+Installing...
+
+<img src="images/win_images/g++-01-download_04.png" alt="g++_install" width="1000"/>
 
 </br>
 
 When it is done installing, click Continue.
-<br/><br/>
 
-> <img src="images/win_images/g++-01-download_06.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/g++-01-download_06.png" alt="g++_install" width="1000"/>
 
 </br>
 
 The **MinGW Installation Manager** should be opened up automatically. For this class, you will need mingw32-base, mingw-gcc-g++, and mingw23-gcc-objc.
-<br/><br/>
 
-> <img src="images/win_images/g++-02-selection_00.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/g++-02-selection_00.png" alt="g++_install" width="1000"/>
 
 </br>
 
 To select a package for installation, right click on it in the menu and select Mark for Installation.
-<br/><br/>
 
-> <img src="images/win_images/g++-02-selection_01.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/g++-02-selection_01.png" alt="g++_install" width="1000"/>
 
 </br>
 
 Marked packages will be selected like this:
-<br/><br/>
 
-> <img src="images/win_images/g++-02-selection_02_zoom.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/g++-02-selection_02_zoom.png" alt="g++_install" width="1000"/>
 
-<br/><br/>
+</br>
 
-you **also** need to select the pthreads package from under <br/>
+You **also** need to select the pthreads package from under <br/>
 All Packages -> MinGW Libraries
-<br/><br/>
 
-> <img src="images/win_images/99-01-pthread.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/99-01-pthread.png" alt="g++_install" width="1000"/>
 
-</br></br>
+</br>
 
-Once all neccesary packages have been marked, go to Installations > Apply Changes to install.
-<br/><br/>
+Once all necessary packages have been marked, go to Installations > Apply Changes to install.
 
-> <img src="images/win_images/g++-02-selection_03.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/g++-02-selection_03.png" alt="g++_install" width="1000"/>
 
-<br/><br/>
+</br>
+
 Click Apply
 
-<br/><br/>
-
-> <img src="images/win_images/g++-02-selection_04.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/g++-02-selection_04.png" alt="g++_install" width="1000"/>
 
 </br>
 
 Once the changes are applied you may close the Installation Manager.
-<br/><br/>
 
-> <img src="images/win_images/g++-02-selection_07.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/g++-02-selection_07.png" alt="g++_install" width="1000"/>
 
 </br>
 
-## Add g++ as a System Variable and to your path
+### Add g++ as a System Variable and to your path
 
 Search for "path" in the task bar search box. Open Edit the system environment variables.
 
-> <img src="images/win_images/g++-03-path_00.png" alt="vscode_after_cloning" width="600"/>
-> <br/>
-
-Click on "Environment Variables..."
-
-> <img src="images/win_images/g++-03-path_01.png" alt="vscode_after_cloning" width="600"/>
-
-<br/>
-
-Add the path to the gcc and g++ executables to environment variables as shown below and press OK.
-
-<br/>
-
-> <img src="images/win_images/g++-03-path_02.png" alt="vscode_after_cloning" width="600"/>
-
-<br/>
-
-Next, double click on the **user variable** Path (in the top half of the window). A window like this should pop up:
-
-> <img src="images/win_images/g++-03-path_before.png" alt="vscode_after_cloning" width="600"/>
->  </br></br>
-
-Click New, and enter C:\MinGW\bin to the text box. Click OK.
-</br></br>
-
-> <img src="images/win_images/g++-03-path_after.png" alt="vscode_after_cloning" width="400"/>
-> </br>
-
-Your environment and user variables should look like this after you are done:
-
-> <img src="images/win_images/g++-03-path_03.png" alt="vscode_after_cloning" width="400"/>
-> </br>
-
-## Check the version of the g++ again:
-
-To make sure `MinGW`/`g++` is intalled correctly, run `g++ --version` again. If the version output doesn't show, reboot your machine and try again.
-
-<br/><br/>
-
-> <img src="images/win_images/g++-00-g++_version.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/g++-03-path_00.png" alt="g++_path" width="600"/>
 
 </br>
 
+Click on "Environment Variables..."
+
+<img src="images/win_images/g++-03-path_01.png" alt="g++_path" width="600"/>
+
+</br>
+
+Add the path to the gcc and g++ executables to environment variables as shown below and press OK.
+
+<img src="images/win_images/g++-03-path_02.png" alt="g++_path" width="600"/>
+
+</br>
+
+Next, double click on the **user variable** Path (in the top half of the window). A window like this should pop up:
+
+<img src="images/win_images/g++-03-path_before.png" alt="g++_path" width="600"/>
+
+</br>
+
+Click New, and enter `C:\MinGW\bin` to the text box. Click OK.
+
+<img src="images/win_images/g++-03-path_after.png" alt="g++_path" width="400"/>
+
+</br>
+
+Your environment and user variables should look like this after you are done:
+
+<img src="images/win_images/g++-03-path_03.png" alt="g++_path" width="400"/>
+
+</br>
+
+### Check the version of the g++ again:
+
+To make sure `MinGW`/`g++` is installed correctly, if the version output doesn't show, reboot your machine and try again.
+
+```sh
+$ g++ --version
+```
+
+<img src="images/win_images/g++-00-g++_version.png" alt="g++_path" width="1000"/>
+
 ---
 
-# <BR><BR><BR><BR><BR>
+</br>
 
 <a name="win_accepting_the_assignment"></a>
 
@@ -357,11 +352,9 @@ To make sure `MinGW`/`g++` is intalled correctly, run `g++ --version` again. If 
 
 ## Accept assignment page:
 
-Once you click on the [assignment link](https://classroom.github.com/a/qidO1KYV), we need you to _accept_ the assignment. This will create a repo under your github username.
-But before you click and accept the assignment, let's look at a couple of things a bit more closely.
-<br/><br/>
+Here is the **assignment link** for [CS3A]() and here is the link for [CS8]()
 
-> <img src="images/lab0_images/a-00-accept_assignment.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/mac_images/a-00-accept_assignment.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -370,7 +363,7 @@ But before you click and accept the assignment, let's look at a couple of things
 This is your repo name. The name of the assignment followed by your github name.
 <br/><br/>
 
-> <img src="images/lab0_images/a-01-your_repo_name.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/mac_images/a-01-your_repo_name.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -379,7 +372,7 @@ This is your repo name. The name of the assignment followed by your github name.
 You will _accept_ the assignment by clicking the green button.
 <br/><br/>
 
-> <img src="images/lab0_images/a-02-click_to_accept.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/mac_images/a-02-click_to_accept.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -388,7 +381,7 @@ You will _accept_ the assignment by clicking the green button.
 Once you accept the assignment, github will begin to creat your assignment repo. You will see this page:
 <br/><br/>
 
-> <img src="images/lab0_images/a-03-waiting_for_setup.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/mac_images/a-03-waiting_for_setup.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -397,7 +390,7 @@ Once you accept the assignment, github will begin to creat your assignment repo.
 Give it a few seconds, and reload the page and you should see this:
 <br/><br/>
 
-> <img src="images/lab0_images/a-04-reload_to_update.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/mac_images/a-04-reload_to_update.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -406,7 +399,7 @@ Give it a few seconds, and reload the page and you should see this:
 Take a closer look and youwill see the link to your repo. Click it and you will find your assignment repo:
 <br/><br/>
 
-> <img src="images/lab0_images/a-05-your_repo_address.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/mac_images/a-05-your_repo_address.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -415,7 +408,7 @@ Take a closer look and youwill see the link to your repo. Click it and you will 
 Bookmark this page or know how to get here. We'll need to check in here soon.
 <br/><br/>
 
-> <img src="images/lab0_images/a-06-your-repo.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/mac_images/a-06-your-repo.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -426,7 +419,7 @@ The green button on the mid-right side that says **Code**, click it and that ope
 Click the little clipboard and that will copy the link into your clipboard so you can paste it in the next step. You will use this url to clone your repo:
 <br/><br/>
 
-> <img src="images/lab0_images/a-07-copy_clone_link.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/mac_images/a-07-copy_clone_link.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -442,13 +435,13 @@ and then: `git clone [clone link] [destination_folder]`
 
 That's what's happening here. I don't like my folder name to be `lab_00_barkeshli`. I like `lab_00`, so, I give it the new name and that clones the project into a folder named `lab_00`
 
-> <img src="images/lab0_images/a-08-clone_and_rename.png" alt="" width="1000"/>
+> <img src="images/mac_images/a-08-clone_and_rename.png" alt="" width="1000"/>
 
 </br>
 
 ## `cd` into this project folder:
 
-> <img src="images/lab0_images/a-09-cd_into_project_folder.png" alt="" width="1000"/>
+> <img src="images/mac_images/a-09-cd_into_project_folder.png" alt="" width="1000"/>
 
 </br>
 
@@ -467,7 +460,7 @@ We will be using VS Code to view and edit our code. Open your newly cloned proje
 Once you have cloned the project and you open VSCode, this is what you will see:
 <br/><br/>
 
-> <img src="images/lab0_images/01-vscode_after_cloning.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/mac_images/01-vscode_after_cloning.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -484,7 +477,7 @@ On the left panel (Explorer, ) you will find the `main.cpp` on the root folder, 
 `build`: is where you go to build and run your project. This is where all your compiled and executable files will end up.
 <br/><br/>
 
-> <img src="images/lab0_images/02-vscode_file_structure.png" alt="vscode_after_cloning" width="200"/>
+> <img src="images/mac_images/02-vscode_file_structure.png" alt="vscode_after_cloning" width="200"/>
 
 </br>
 
@@ -499,7 +492,7 @@ This is the placeholder file for a sample test file you wilkl be given for each 
 This is the file that will contain your tests of your own functions and classes. All your test fils that will demonstrate the correctness of your poject are housed here. Part of your grade relies on the quality and success of the tests in this file.
 <br/><br/>
 
-> <img src="images/lab0_images/03-basic_test_testB_generic.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/mac_images/03-basic_test_testB_generic.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -519,7 +512,7 @@ Please note that you will **only** make changes to the bottom half of this file.
 It's worth mentioning that every **.cpp** file that is used in any of your test files (main, basic_test, testA, testB) will have to be listed here. Notice how the stub.cpp is listed under ADD_EXECUTABLE(testB...)
 <br/><br/>
 
-> <img src="images/lab0_images/04-cmakelists.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/mac_images/04-cmakelists.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -528,7 +521,7 @@ It's worth mentioning that every **.cpp** file that is used in any of your test 
 Not too much to see here. The stub is used in testB to demonstrate how a function will be tested by the googletest framework in `testB.cpp`. All your functions and classes will be housed under their own folder (`stub/`, `array_functions/`, `vector/`, etc.) which will, in turn, go under the `includes/` folder.
 <br/><br/>
 
-> <img src="images/lab0_images/05-include_stub_h_cpp.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/mac_images/05-include_stub_h_cpp.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -689,7 +682,7 @@ If your command is successful, you will get a response similar to this:
 Take a look at your project repo on Github. See how the changes you made to README.md shows on your repo:
 <br/><br/>
 
-> <img src="images/lab0_images/d-05-gh_changed.png" alt="vscode_after_cloning" width="1000"/>
+> <img src="images/mac_images/d-05-gh_changed.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 </br>

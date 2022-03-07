@@ -4,6 +4,7 @@
 - ### [Installing `cmake`](#win_installing_cmake)</br>
 - ### [Installing `MinGW`](#win_installing_mingw)</br>
 - ### [Accepting the assignment](#win_accepting_the_assignment)</br>
+- ### [Cloning the assignment](#win_cloning_the_assignment)</br>
 - ### [Project organization](#win_project_organization)</br>
 - ### [Git commands](#win_git_commands)</br>
 - ### [Build and run walk through](#win_build_and_run_walkthrough)</br>
@@ -346,362 +347,219 @@ $ g++ --version
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Accept the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-## Here is the **assignment link** for [CS3A](https://classroom.github.com/a/qidO1KYV) and here is the link for [CS8](https://classroom.github.com/a/DYb_nBnE)
-
-# </br>
-
-## Accept assignment page:
-
 Here is the **assignment link** for [CS3A]() and here is the link for [CS8]()
 
-<img src="images/mac_images/a-00-accept_assignment.png" alt="vscode_after_cloning" width="1000"/>
+</br>
+
+### Accept assignment
+
+1. Click on the assignment link.
+1. Select yourself from the list with your name.
+1. Click on the green button, `Accept this assignment`  to accept the assignment.
+
+<img src="images/mac_images/a-00-accept_assignment.png" alt="accept_assignment" width="1000"/>
 
 </br>
 
-## Your repo name:
+This will create a repo under your github username. The name of repo will be the name of assignment followed by your github name.
 
-This is your repo name. The name of the assignment followed by your github name.
-<br/><br/>
-
-> <img src="images/mac_images/a-01-your_repo_name.png" alt="vscode_after_cloning" width="1000"/>
+> `00_lab_0-stephengineer`
 
 </br>
 
-## Accept the assignment
+### Assignment repo
 
-You will _accept_ the assignment by clicking the green button.
-<br/><br/>
+Once you accepted the assignment, github will begin to create your assignment repo and give it a few seconds, then:
 
-> <img src="images/mac_images/a-02-click_to_accept.png" alt="vscode_after_cloning" width="1000"/>
+1. Refresh this page to see updates.
+1. Click the link of repo.
 
-</br>
-
-## Your assignment repo being created.
-
-Once you accept the assignment, github will begin to creat your assignment repo. You will see this page:
-<br/><br/>
-
-> <img src="images/mac_images/a-03-waiting_for_setup.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/mac_images/a-04-reload_to_update.png" alt="reload_to_update" width="1000"/>
 
 </br>
 
-## Your assignment repo:
+__Note__: Bookmark this page to know how to get here. We'll need to check in here soon.
 
-Give it a few seconds, and reload the page and you should see this:
-<br/><br/>
-
-> <img src="images/mac_images/a-04-reload_to_update.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## look closer:
-
-Take a closer look and youwill see the link to your repo. Click it and you will find your assignment repo:
-<br/><br/>
-
-> <img src="images/mac_images/a-05-your_repo_address.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Your assignment repo:
-
-Bookmark this page or know how to get here. We'll need to check in here soon.
-<br/><br/>
-
-> <img src="images/mac_images/a-06-your-repo.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## The **Code** button:
-
-The green button on the mid-right side that says **Code**, click it and that opens this box:
-
-Click the little clipboard and that will copy the link into your clipboard so you can paste it in the next step. You will use this url to clone your repo:
-<br/><br/>
-
-> <img src="images/mac_images/a-07-copy_clone_link.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## clone the assignment repo:
-
-Before you can work on your project, you will need a local copy of the assignment. This is called **cloning** the repository.
-
-**First step** is to `cd` into the fodler where you will be storing all your projects.
-
-`cd` into your projects folder and clone your project there.
-
-and then: `git clone [clone link] [destination_folder]`
-
-That's what's happening here. I don't like my folder name to be `lab_00_barkeshli`. I like `lab_00`, so, I give it the new name and that clones the project into a folder named `lab_00`
-
-> <img src="images/mac_images/a-08-clone_and_rename.png" alt="" width="1000"/>
-
-</br>
-
-## `cd` into this project folder:
-
-> <img src="images/mac_images/a-09-cd_into_project_folder.png" alt="" width="1000"/>
-
-</br>
-
-We will be using VS Code to view and edit our code. Open your newly cloned project int VS Code.
-
-</br>
+<img src="images/mac_images/a-06-your-repo.png" alt="your-repo" width="1000"/>
 
 ---
 
-# <BR><BR><BR><BR><BR>
+
+</br>
+
+<a name="win_cloning_the_assignment"></a>
+
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Cloning the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+
+### Get git link of assignment
+
+1. Click on the green `Code` button on the mid-right.
+1. Click the little clipboard and that will copy the link into your clipboard so you can paste it in the next step. 
+
+<img src="images/mac_images/a-07-copy_clone_link.png" alt="copy_clone_link" width="1000"/>
+
+</br>
+
+### Clone assignment
+
+Before you can work on your project, you will need a local copy of the assignment. This is called **clone** the repository.
+
+```sh
+# create and go the the directory of projects
+$ cd /Users/stephen/CS3A/
+
+# clone repo
+$ git clone https://github.com/stephengineer-CS003A/00_lab_0-stephengineer.git
+```
+
+---
+
+</br>
 
 <a name="win_project_organization"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Project Organization: ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
-
-Once you have cloned the project and you open VSCode, this is what you will see:
-<br/><br/>
-
-> <img src="images/mac_images/01-vscode_after_cloning.png" alt="vscode_after_cloning" width="1000"/>
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Project Organization ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
 </br>
 
-## File system:
+### Open assignment with VSCode
+
+Open VSCode and loads the project folder
+
+```sh
+# go the project folder
+$ cd 00_lab_0-stephengineer
+
+# open VSCode
+$ code .
+```
+
+<img src="images/mac_images/01-vscode_after_cloning.png" alt="vscode_after_cloning" width="1000"/>
+
+</br>
+
+### File system
 
 All the projects in this class will follow the same file organization.
 
-On the left panel (Explorer, ) you will find the `main.cpp` on the root folder, and the three most important folders in this directory:
+On the left panel (Explorer) you will find the `main.cpp` on the root folder, and the three most important folders in this directory:
 
-`_tests`: which holds your google test files. The grader will run these files to obtain your score. You will ignore `testA.cpp` for the most part. The bulk of your work will be done in `testB.cpp`.
+- `_tests`: holds your google test files. The grader will run these files to obtain your score. You will ignore `testA.cpp` for the most part. The bulk of your work will be done in `testB.cpp`.
 
-`includes`: contains a folder for each of the libraries / classes your project depends on. In this starter code, you only have a `stub` folder that contains `stub.h` and `stub.cpp`. These files are `#include`d in `testB.cpp`
+- `includes`: contains a folder for each of the libraries/classes your project depends on. In this starter code, you only have a `stub` folder that contains `stub.h` and `stub.cpp`. These files are `#include`d in `testB.cpp`
 
-`build`: is where you go to build and run your project. This is where all your compiled and executable files will end up.
-<br/><br/>
+- `build`: is where you go to build and run your project. This is where all your compiled and executable files will end up.
 
-> <img src="images/mac_images/02-vscode_file_structure.png" alt="vscode_after_cloning" width="200"/>
-
-</br>
-
-## A look at the test files:
-
-### basic_test.cpp: My sample test goes here.
-
-This is the placeholder file for a sample test file you wilkl be given for each and every project. The purpose of this file is to demonstrate the functionality of the project and for you to make sure that your function signatures and class declarations match the grader's expectations. (otherwise, your projects will not earn a score.)
-
-### testB.cpp: Your tests go here
-
-This is the file that will contain your tests of your own functions and classes. All your test fils that will demonstrate the correctness of your poject are housed here. Part of your grade relies on the quality and success of the tests in this file.
-<br/><br/>
-
-> <img src="images/mac_images/03-basic_test_testB_generic.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/mac_images/02-vscode_file_structure.png" alt="vscode_after_cloning" width="200"/>
 
 </br>
 
-## CMakeLists.txt
+### Test files
 
-The github grader as well as your local Mac or linux systems will use the CMakeLists.txt file to build your project.
+#### basic_test.cpp: Prof's sample test go here
 
-### List your cpp files here
+> This is the placeholder file for a sample test file you will be given for each and every project. The purpose of this file is to demonstrate the functionality of the project and for you to make sure that your function signatures and class declarations match the grader's expectations. (otherwise, your projects will not earn a score.)
 
-the `CMakeLists.txt` file is what the cmake program looks at to know how to build your project. How the pieces fit together.
+#### testB.cpp: student's tests go here
 
-When you submit your code, you need to tell it what files are needed to build the test executables.
-
-The grader will also use this file to build your project on the server side (once you submit - push your projects to github)
-
-Please note that you will **only** make changes to the bottom half of this file.
-It's worth mentioning that every **.cpp** file that is used in any of your test files (main, basic_test, testA, testB) will have to be listed here. Notice how the stub.cpp is listed under ADD_EXECUTABLE(testB...)
-<br/><br/>
-
-> <img src="images/mac_images/04-cmakelists.png" alt="vscode_after_cloning" width="1000"/>
+> This is the file that will contain the tests of your own functions and classes. All your test files that will demonstrate the correctness of your project are housed here. Part of your grade relies on the quality and success of the tests in this file.
 
 </br>
 
-## stub.h, stub.cpp
+### List of cpp files
 
-Not too much to see here. The stub is used in testB to demonstrate how a function will be tested by the googletest framework in `testB.cpp`. All your functions and classes will be housed under their own folder (`stub/`, `array_functions/`, `vector/`, etc.) which will, in turn, go under the `includes/` folder.
-<br/><br/>
+#### stub.h, stub.cpp
 
-> <img src="images/mac_images/05-include_stub_h_cpp.png" alt="vscode_after_cloning" width="1000"/>
+> Not too much to see here. The stub is used in testB to demonstrate how a function will be tested by the google test framework in `testB.cpp`. All your functions and classes will be housed under their own folder (`stub/`, `array_functions/`, `vector/`, etc.) which will, in turn, go under the `includes/` folder.
 
 </br>
+
+### CMake file
+
+#### CMakeLists.txt
+
+> The github grader as well as your local Mac or linux systems will use the CMakeLists.txt file to build your project.
 
 ---
 
-## Open terminal:
+</br>
 
-If you are using VSCode, you can open the terminal by pressing [ctrl][`]
+<a name="win_git_commands"></a>
 
-[`] is the key in the top left of the keyboard under [~]
+# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Git commands ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-Using the terminal in this way is very convenient.
+One of the main tasks in this class is tracking changes made to the project. We need to know what happened when and what changed. This is both for your peace of mind (helps you not lose your project accidentally) and for me to track your progress through the course. We use [git](https://git-scm.com/) to track changes.
 
-<br/><br/>
-
-> <img src="images/win_images/test-00-basic_test_05.png" alt="vscode_after_cloning" width="1000"/>
+__Here__, we will make some small change to one of our files and walk through the entire process of tracking that change with `git`, just so you can get used to it.
 
 </br>
 
-# <BR><BR><BR><BR><BR>
+### Check status
 
-<a name="win_quick_edit_status_add_commit_n_push"></a>
+```sh
+# show the working tree status
+$ git status
+```
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Quick edit, `status`, `add`, `commit` & `push` ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+Look at the response: It says there is not change as of yet. That's correct. We have not made any changes.
 
-</br>
-
-One of the main tasks in this class is tracking changes made to the project. We need to know what happened when and what changed. This is both for your peace of mind (helps you not lose your project accidentally,) and for me to track your progress throught he course.
-
-We use **git** to track changes.
-
-**Here**, we will make some small change to one of our files and walk through the entire process of tracking that change with `git`, just so you can get used to it.
+<img src="images/mac_images/c-00-git_status_1.png" alt="git_status" width="1000"/>
 
 </br>
 
-## `git status`
+### Edit the README.md
+1. Enter your name in the README.md and save it.
+2. `$ git status` again.
 
-let's run `git status`. look at the response: It says there are not changes as of yet. That's correct, isn't it. We have not made any changes.
-<br/><br/>
-
-> <img src="images/win_images/Quick-00-quick_edit_00.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Edit the README.md
-
-Enter your name in the README.md and save it.
-<br/><br/>
-
-> <img src="images/win_images/Quick-00-quick_edit_01.png" alt="vscode_after_cloning" width="1000"/>
+After you run `$ git status` again, you will see that git has kept track of our changes. This time, it says that the file `README.md` has changed, but the `changes is not staged for commit`.
 
 </br>
 
-## `git status` again:
+### Git workflow
 
-if you run `git status` again, you will see that git has kept track of our changes. this time, it says that the file `README.md` has changed. But it says that the file is not _staged_ for commit.
+As usual, one picture is worth a thousand words:
 
-Think of it this way... There are four zones:
-</br></br>
-
-[changes not staged]
-
----- `git add`--->
-
-[staged changes, but not committed]
-
----- `git commit`--->
-
-[committed changes]
-
----- `git push`--->
-
-[pushed, or synched with remote site]
-
-You go from zone to zone by the commands listed above.
-
-<br/><br/>
-
-> <img src="images/win_images/Quick-00-quick_edit_02.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/mac_images/c-00-git_workflow.png" alt="git_workflow" width="1000"/>
 
 </br>
 
-## `git add` and then, `git status` again:
+You go from zone to zone by the [git commands](https://git-scm.com/docs).
 
-In order to _stage_ the changes for `commit`, Enter `git add README.md`. This will stage the file.
+```sh
+# show the working tree status
+$ git status
 
-do `get status` again. Now, you see that `README.md` has been _staged_
+# to see differences
+$ git diff
 
-<br/><br/>
+# to stage all different files
+$ git add .
 
-> <img src="images/win_images/Quick-00-quick_edit_03.png" alt="vscode_after_cloning" width="1000"/>
+# record changes to the repository
+$ git commit -m "comments of changes"
 
-</br>
+# update code to remote repo
+$ git push origin master
 
-## `commit` your changes:
-
-You `commit` your changes to permanently record these changes to `git`. If somehow you ruin your project (as we all have done from time to time,) you can _revert_ to this state of your project.
-
-`commit`ting is like _saving_ your changes to `git`
-
-Enter `git commit -m "[explain what you just did, in your own words]"`
-
-Here,`-m` is a switch that tells `git` that you will be typing a message to document what this `commit` was for. We want this message to be concise and descriptive of the work that is being recorded.
-
-Try typing in your own message in your own words.
-
-<br/><br/>
-
-> <img src="images/win_images/Quick-00-quick_edit_04.png" alt="vscode_after_cloning" width="1000"/>
-> </br>
-
-## Has Github assignment repo changed?
-
-Take a look at your assignment repo on your browser. You will see that eventhough you have committed your changes, Github does not know about them!
-
-`commit`ting only records your changes on your local machine.
-</br>
-</br>
-
-## What is my local `branch` name?
-
-If we want Github to know about our changes, we must `push` them to Github. But before you do, let's find out what our current _branch_ is.
-
-For me, the branch name is `master` as evidenced by these images.
-
-Your bash prompt on your terminal:
-
-<br/><br/>
-
-> <img src="images/win_images/Quick-00-quick_edit_05.png" alt="vscode_after_cloning" width="1000"/>
-
-<br/>
-
-## Zoomed in:
-
-`git branch` will tell you the name of our local branch. Try it.
-
-<br/><br/>
-
-> <img src="images/win_images/Quick-00-quick_edit_06_zoom.png" alt="vscode_after_cloning" width="1000"/>
+# show commit logs
+$ git log
+```
 
 </br>
 
-## `git push`:
+Now, Github knows about your changes, take a look at your project repo on Github to see how the changes you made to README.md.
 
-Since my branch name is `master`, I will issue the command `git push origin master` which means push to `origin`, which is my github remote name, from `master` which is my local branch name. For you, your branch namge might be `main`, so, your commmand will be `git push origin main`:
-
-If your command is successful, you will get a response similar to this:
-
-<br/><br/>
-
-> <img src="images/win_images/Quick-00-quick_edit_06.png" alt="vscode_after_cloning" width="1000"/>
+__Note__: `commit` and `push` often: make sure you `commit` your changes after completion of __every__ task. Remeber, `commit`s are the record of your progress. You will be graded on your commits and push your changes frequently.
 
 </br>
 
-## Now, Github knows about our changes:
+### Bonus
 
-Take a look at your project repo on Github. See how the changes you made to README.md shows on your repo:
-<br/><br/>
-
-> <img src="images/mac_images/d-05-gh_changed.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-</br>
-
-## `commit` and `push` often:
-
-Make sure you `commit` your changes after completion of **every** task. Remeber, `commit`s are the record of your progress. You will be graded on your commits. And push your changes frequently.
-<BR><BR>
-<BR><BR>
-<BR><BR>
-<BR><BR>
-
-## Bonus: `git log`
-
-Enter `git log` and see what the response is. What does this command do?
+- Try to learn git [branches](https://www.atlassian.com/git/tutorials/using-branches).
 
 ---
 
-# <BR><BR><BR><BR><BR>
+</br>
 
 <a name="win_build_and_run_walkthrough"></a>
 

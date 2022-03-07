@@ -449,7 +449,7 @@ On the left panel (Explorer) you will find the `main.cpp` on the root folder, an
 
 - `build`: is where you go to build and run your project. This is where all your compiled and executable files will end up.
 
-<img src="images/mac_images/02-vscode_file_structure.png" alt="vscode_after_cloning"/>
+<img src="images/mac_images/02-vscode_file_structure.png" alt="vscode_after_cloning" width="200"/>
 
 </br>
 
@@ -592,7 +592,7 @@ Add two files in the project folder:
 - `array_functions.h`
 - `array_functions.cpp`
 
-<img src="images/mac_images/08-project_folder.png" alt="project_folder"/>
+<img src="images/mac_images/08-project_folder.png" alt="project_folder" width="200"/>
 
 </br>
 

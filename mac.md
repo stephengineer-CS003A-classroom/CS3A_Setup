@@ -439,17 +439,17 @@ Hopefully, your `cmake` will run without any problems and it will tell you that 
 Another method to build project. If you have not already install CMake and CMake Tools in VS Code:
 
 1. On the left of VS Code, click on `extensions`.
-1. Search 'cmake'.
+1. Search `cmake`.
 1. Install `CMake` and `CMake Tools`
 
-<img src="images/mac_images/b-02-cmake_tools_1.png" alt="cmake_tools" width="200"/>
+<img src="images/mac_images/b-02-cmake_tools_1.png" alt="cmake_tools"/>
 
 </br>
 
 #### Rebuild
 You should be able to right click on `CMakeLists.txt` and click on `Clean Reconfigure All Projects`:
 
-<img src="images/mac_images/b-02-cmake_tools_2.png" alt="cmake_tools" width="200"/>
+<img src="images/mac_images/b-02-cmake_tools_2.png" alt="cmake_tools"/>
 
 </br>
 
@@ -467,7 +467,7 @@ A prompt should appear on top, just click on similar compiler to:
 
 If it does not show up, you will need to manually select it on the bottom there is a button as shown:
 
-<img src="images/mac_images/b-02-cmake_tools_5.png" alt="cmake_tools" width="200"/>
+<img src="images/mac_images/b-02-cmake_tools_5.png" alt="cmake_tools"/>
 
 </br>
 

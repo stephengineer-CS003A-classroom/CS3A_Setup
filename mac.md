@@ -449,7 +449,7 @@ Another method to build project. If you have not already install CMake and CMake
 #### Rebuild
 You should be able to right click on `CMakeLists.txt` and click on `Clean Reconfigure All Projects`:
 
-<img src="images/mac_images/b-02-cmake_tools_2.png" alt="cmake_tools"/>
+<img src="images/mac_images/b-02-cmake_tools_2.png" alt="cmake_tools" width="300"/>
 
 </br>
 

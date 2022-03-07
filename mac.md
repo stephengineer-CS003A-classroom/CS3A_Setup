@@ -7,7 +7,6 @@
 - ### [Project organization](#mac_project_organization)</br>
 - ### [Git commands](#mac_git_commands)</br>
 - ### [Getting started with the project](#mac_getting_started)</br>
-- ### [Writing tests](#mac_writing_tests)</br>
 - ### [Completing the project](#mac_completing_the_project)</br>
 
 ---
@@ -432,13 +431,12 @@ $ make
 
 ### Step 8: Push changes to Github
 
-Run git commands to push changes to remote repo:
+Run git commands to commit changes:
 
 ```sh
 $ git status
 $ git add .
 $ git commit - m "success on make with stubs"
-$ git push origin master
 ```
 
 __Note__: The importance of having __regular__ `commit`s in your project cannot be overstated. This is a large part of the evaluation of your project by me.
@@ -447,137 +445,228 @@ __Note__: The importance of having __regular__ `commit`s in your project cannot 
 
 </br>
 
-Now, you can implement functions one by one in `array_functions.cpp` and write tests in the `testB.cpp` file for it.
+Now, you can implement functions one by one in `array_functions.cpp` and write tests in the `testB.cpp` file for it to complete the project.
 
 ---
 
 </br>
-
-<a name="mac_writing_tests"></a>
-
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Writing tests ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
-
-</br>
-
-### The first test
-
-After implementing the \_array_init and \_print_array functions, we will write a simple test that will verify that the \_init function works as it should.
-
-The test function is boolean. It returns `true` if the init function works properly and false otgherwise.
-
-Call the `_array_init` function and then go through each and every cell and verify that each element is -1.
-
-If you find one cell that is not -1, return false.
-
-Note also that we return `true` at the end of the test function. I do this in every test function I write.
-
-> <img src="images/lab0_images/25-test_init_array.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-#The `TEST` function:
-
-The `TEST` function is part of the googletest testing framework. To simplify our work, we always use the same format for the `TEST` function: Declare a `bool success` and assign it to the return value of the test function.
-
-Then, compare `success` with `1` or `true`
-
-A quick word about the two arguments of the `TEST` function:
-
-The first is the name of the _test suit_ and the second is the name of this very test. Each test suit may contain multiple tests. Later, we will write another test for the `_append` function with the same first argument as this test: `TEST_ARRAY`. By the time we are done, the `TEST_ARRAY` test suite will have three individual tests.
-
-Pay attention to the **naming conventions** for this course: The test suite will be in ALL CAPS with underscores between the words. The test names will be camel case and regular function names are all lower case with underscores.
-
-> <img src="images/lab0_images/26.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## `make` and RUN!!
-
-This time, we will run `make` successfully and then, we run the `testB` executable by typing `./bin/testB`
-
-This means execute the file named `testB` that is located in the `bin` folder which is under the `current folder`. The bin folder is created by `make`
-
-remember that `.` means current folder and is not optional. You **must** include the dot in the call to execute `testB`
-
-This will display two successful test runs: one for the `stub` test that was already part of the project, and one for the `TestInit` that we just wrote.
-
-This means that our test function returned `true`.
-
-> <img src="images/lab0_images/27-make_run_testB.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## Implement `_append` and `_at`:
-
-We have thus far implemented `_array_init` and `print_array`. Let's implement `_append` and `_at` as well.
-
-You will _borrow_ my code for this particular lab, but make sure you comment the code very well.
-
-Once we have implemented `_append`, write the test for it in `testB.cpp`. Don't forget to add a `TEST( )` for the `test_append()` function.
-
-> <img src="images/lab0_images/29_0_test_append.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-Obviously, this is done in the `testB.cpp` file. Again, do not forget to add the `TEST( )` function for `test_at()`
-
-Once again, you will _borrow_ my code for this particular lab, but make sure you comment the code very well.
-
-> <img src="images/lab0_images/29_1_test_at.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## `make` and run `testB.cpp` again:
-
-Let's `make` and run `testB` to make sure our `test_append` and `test_at` pass:
-
-> <img src="images/lab0_images/30-PASSED_three_tests.png" alt="vscode_after_cloning" width="1000"/>
-
----
-
-# <BR><BR><BR><BR><BR>
 
 <a name="mac_completing_the_project"></a>
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Completing the project ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-## Implement the `_find()` function on your own
+</br>
 
-You will also write a `test_find()` function. Once you have implemented `_find()` and written the test function for it (don't forget to comment) you are ready to `make` and run `testB` once again.
+### Writing tests
 
-Once you have successfully run `testB` with `_find`, you `git add ` and ` commit` your changes:
+After implementing the `_array_init` and `_print_array` functions, we will write a simple test that will verify the function works as it should.
 
-> <img src="images/lab0_images/32-add_commit.png" alt="vscode_after_cloning" width="1000"/>
+The test function is boolean. It returns `true` if the init function works properly and false otherwise.
+
+Call the `_array_init` function and then go through each and every cell and verify that each element is -1. If you find one cell that is not -1, return false.
+
+Note also that we return `true` at the end of the test function. I do this in every test function I write.
+
+```c++
+bool test_init_array(bool debug=false) {
+  int a[20];
+  int size = 5;
+  const char tabs[] = "\t--------------------------\t";
+  if (debug) {
+    cout << tabs << "size: 5, init array to -1" << endl;
+  }
+  _array_init(a, size, -1);
+  if (debug) {
+    cout << tabs;
+    _print_array(a, size);
+    cout << endl;
+  }
+  for (int i=0; i<size; i++) {
+    if (a[i] != -1) {
+      cout << "FAILED: Expected -1 at a[" << i << "], but found: " << a[i] << endl;
+      return false;
+    }
+  }
+  return true;
+}
+```
 
 </br>
 
-<BR>
+### The `TEST`
 
-## Finally, we can run `basic_test.cpp`:
+The `TEST` function is part of the google test testing framework. To simplify our work, we always use the same format for the `TEST` function: Declare a `bool success` and assign it to the return value of the test function.
+
+Then, compare `success` with `1` or `true`
+
+A quick word about the two arguments of the `TEST` function:
+
+- test suit
+- test name
+
+The first is the name of the _test suit_ and the second is the name of this very test. Each test suit may contain multiple tests. Later, we will write another test for the `_append` function with the same first argument as this test: `TEST_ARRAY`. By the time we are done, the `TEST_ARRAY` test suite will have three individual tests.
+
+Pay attention to the _naming conventions_ for this course:
+
+- __test suite__ will be in __ALL uppercase__ with underscores between the words.
+- __test names__ will be in __camel case__.
+- __test function names__ will be in __ALL lowercase__ with underscores between the words.
+
+```c++
+TEST(TEST_ARRAY, TestInit) {
+  bool success = test_stub(debug);
+  EXPECT_EQ(success, test_init_array());
+}
+```
+
+</br>
+
+### make and run
+
+This time, we will run `make` successfully and then, we run the `testB` executable by typing `./bin/testB`
+
+This means execute the file named `testB` that is located in the `bin` folder which is under the `current folder`. The bin folder is created by `make`
+
+remember that `.` means current folder and is not optional. You __must__ include the dot in the call to execute `testB`
+
+This will display two successful test runs: one for the `stub` test that was already part of the project, and one for the `TestInit` that we just wrote.
+
+This means that our test function returned `true`.
+
+<img src="images/lab0_images/27-make_run_testB.png" alt="make_run_testB" width="1000"/>
+
+---
+
+</br>
+
+### Implement all functions
+
+Let's implement all other functions in `array_functions.cpp`:
+
+```c++
+void _append(int a[], int& size, int append_me) {
+  a[size] = append_me;
+}
+
+int _find(const int a[], int size, int find_me) {
+  // Implement the _find() function on your own
+}
+
+int& _at(int a[], int size, int pos) {
+    assert(pos<size);
+    return a[pos];
+}
+```
+
+### Writing all tests
+
+Let's write all other test in `testB.cpp`:
+
+```c++
+bool test_append(bool debug=false) {
+  int a[20];
+  int size = 5;
+  const char tabs[] = "\t--------------------------\t";
+  if (debug) {
+    cout << tabs << "size: 5, init array to -1" << endl;
+  }
+  _array_init(a, size, -1);
+  if (debug) {
+    cout << tabs;
+    _print_array(a, size);
+    cout << endl;
+  }
+  for (int i = size; i < 10; i++) {
+    _append(a, size, i * 10);
+    if (debug) {
+      cout << tabs;
+      _print_array(a, size);
+      cout << endl;
+    }
+  }
+  if (size != 10) {
+    cout << "FAILED: Expected size to be 10, but found: " << size << endl;
+    return false;
+  }
+  if (a[size-1] != (size-1)*10) {
+    cout << "FAILED: Expected: " << (size-1)*10 
+         << " at a[" << size-1 << "], but found: " << a[size-1] << endl;
+    return false;
+  }
+  return true;
+}
+
+bool test_at(bool debug=false) {
+  int a[20];
+  int size = 5;
+  const char tabs[] = "\t--------------------------\t";
+  if (debug) {
+    cout << tabs << "size: 5, init array to -1" << endl;
+  }
+  _array_init(a, size, -1);
+  if (debug) {
+    cout << tabs;
+    _print_array(a, size);
+    cout << endl;
+  }
+  int at_i;
+  for (int i=0; i<size; i++) {
+    at_i = _at(a, size, i);
+    if (at_i != -1) {
+      cout << "FAILED: Expected at{i} to return -1, but found: " << at_i << endl;
+      return false;
+    }
+  }
+  _at(a, size, 3) = 300;
+  at_i = _at(a, size, 3);
+  if (at_i != 300) {
+    cout << "FAILED: Expected to find 300 at{3}, but found: " << at_i << endl;
+    return false;
+  }
+  return true;
+}
+
+bool test_find(bool debug=false) {
+  // Implement the _find() test function on your own
+}
+```
+
+Obviously, you are done in the testB.cpp file, do not forget to add the `TEST()`  for all test functions.
+
+Let's `make` and run `testB` to make sure all test functions pass.
+
+<img src="images/lab0_images/30-PASSED_three_tests.png" alt="PASSED_three_tests" width="1000"/>
+
+</br>
+
+Once you have successfully run `testB`, you can run git commands to commit changes:
+
+```sh
+# under project folder: ./00_lab_0
+
+$ git status
+$ git add .
+$ git commit - m "success on make with stubs"
+$ git push origin master
+```
+
+</br>
+
+### Run `basic_test.cpp`:
 
 Now that we have implemented all the functions that are used in `basic_test.cpp`, we can `make` and run this file.
 
-I cannot overemphasize how important it is for this test to be able to compile and run **without** your editing it in any way. If your project cannot compile and run `basic_test`, the grader will not be able to run your project.
+I cannot overemphasize how important it is for this test to be able to compile and run __without__ your editing it in any way. If your project cannot compile and run `basic_test`, the grader will not be able to run your project.
 
-> <img src="images/lab0_images/31-PASSED-basic_test.png" alt="vscode_after_cloning" width="1000"/>
-
-</br>
-
-## `git add` and the final `git commit`
-
-Let's go back to the root directory by typing `cd ..` - remember that `..` means parent directory. `cd ..` means change directory to the parent.
-
-My commit message will let me know what stage of the development I am in. I have just PASSED both the `basic_test` and `testB`
-
-> <img src="images/lab0_images/33.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/lab0_images/31-PASSED-basic_test.png" alt="PASSED-basic_test" width="1000"/>
 
 </br>
 
-## Autograder Status
+# Autograder Status
 
-You can keep track of the grading status of your project on the assigmment page. A yellow dot means that the tests are still being compiled and run by the autograder.This shouldn't take more than a minute or two. You can refresh the page to update the status. A green checkmark neans that all your tests have passed. A red x means that at least one test failed.
+You can keep track of the grading status of your project on the assignment page. A yellow dot means that the tests are still being compiled and run by the autograder.This shouldn't take more than a minute or two. You can refresh the page to update the status. A green checkmark means that all your tests have passed. A red x means that at least one test failed.
 
-<br/><br/>
+<br/>
 
 > <img src="images/win_images/test-04_reslts_github_02.png" alt="vscode_after_cloning" width="1000"/>
 
@@ -589,14 +678,14 @@ You can keep track of the grading status of your project on the assigmment page.
 
 To see a more in depth output of the autograder test runs, click on the Details link:
 
-<br/><br/>
+<br/>
 
 > <img src="images/win_images/test-04_reslts_github_05.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
 It will take you to this page:
-<br/><br/>
+<br/>
 
 > <img src="images/win_images/test-04_reslts_github_07.png" alt="vscode_after_cloning" width="1000"/>
 

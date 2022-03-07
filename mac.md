@@ -66,7 +66,9 @@ Let's check to see if `cmake` is installed successfully:
 $ cmake --version
 ```
 
-<img src="images/lab0_images/b-00-cmake_version.png" alt="cmake version" width="1000"/>
+<img src="images/mac_images/b-00-cmake_version.png" alt="cmake version" width="1000"/>
+
+</br>
 
 If you do not get a response similar to this, then you do not have `cmake` on your system and you have to install it.
 
@@ -88,7 +90,9 @@ Here is the **assignment link** for [CS3A]() and here is the link for [CS8]()
 1. Select yourself from the list with your name.
 1. Click on the green button, `Accept this assignment`  to accept the assignment.
 
-<img src="images/lab0_images/a-00-accept_assignment.png" alt="accept_assignment" width="1000"/>
+<img src="images/mac_images/a-00-accept_assignment.png" alt="accept_assignment" width="1000"/>
+
+</br>
 
 This will create a repo under your github username. The name of repo will be the name of assignment followed by your github name.
 
@@ -103,11 +107,13 @@ Once you accepted the assignment, github will begin to create your assignment re
 1. Refresh this page to see updates.
 1. Click the link of repo.
 
-<img src="images/lab0_images/a-04-reload_to_update.png" alt="reload_to_update" width="1000"/>
+<img src="images/mac_images/a-04-reload_to_update.png" alt="reload_to_update" width="1000"/>
+
+</br>
 
 __Note__: Bookmark this page to know how to get here. We'll need to check in here soon.
 
-<img src="images/lab0_images/a-06-your-repo.png" alt="your-repo" width="1000"/>
+<img src="images/mac_images/a-06-your-repo.png" alt="your-repo" width="1000"/>
 
 ---
 
@@ -122,7 +128,7 @@ __Note__: Bookmark this page to know how to get here. We'll need to check in her
 1. Click on the green `Code` button on the mid-right.
 1. Click the little clipboard and that will copy the link into your clipboard so you can paste it in the next step. 
 
-<img src="images/lab0_images/a-07-copy_clone_link.png" alt="copy_clone_link" width="1000"/>
+<img src="images/mac_images/a-07-copy_clone_link.png" alt="copy_clone_link" width="1000"/>
 
 </br>
 
@@ -160,7 +166,7 @@ $ cd 00_lab_0-stephengineer
 $ code .
 ```
 
-<img src="images/lab0_images/01-vscode_after_cloning.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/mac_images/01-vscode_after_cloning.png" alt="vscode_after_cloning" width="1000"/>
 
 </br>
 
@@ -176,7 +182,7 @@ On the left panel (Explorer) you will find the `main.cpp` on the root folder, an
 
 - `build`: is where you go to build and run your project. This is where all your compiled and executable files will end up.
 
-<img src="images/lab0_images/02-vscode_file_structure.png" alt="vscode_after_cloning" width="200"/>
+<img src="images/mac_images/02-vscode_file_structure.png" alt="vscode_after_cloning" width="200"/>
 
 </br>
 
@@ -229,7 +235,7 @@ $ git status
 
 Look at the response: It says there is not change as of yet. That's correct. We have not made any changes.
 
-<img src="images/lab0_images/c-00-git_status_1.png" alt="git_status" width="1000"/>
+<img src="images/mac_images/c-00-git_status_1.png" alt="git_status" width="1000"/>
 
 </br>
 
@@ -245,8 +251,9 @@ After you run `$ git status` again, you will see that git has kept track of our 
 
 As usual, one picture is worth a thousand words:
 
-<img src="images/lab0_images/c-00-git_workflow.png" alt="git_workflow" width="1000"/>
+<img src="images/mac_images/c-00-git_workflow.png" alt="git_workflow" width="1000"/>
 
+</br>
 
 You go from zone to zone by the [git commands](https://git-scm.com/docs).
 
@@ -318,7 +325,7 @@ Add two files in the project folder:
 - `array_functions.h`
 - `array_functions.cpp`
 
-<img src="images/lab0_images/08-project_folder.png" alt="project_folder" width="1000"/>
+<img src="images/mac_images/08-project_folder.png" alt="project_folder" width="1000"/>
 
 </br>
 
@@ -425,7 +432,7 @@ Now, we are ready to compile project using `make`
 $ make
 ```
 
-<img src="images/lab0_images/21-make.png" alt="make" width="1000"/>
+<img src="images/mac_images/21-make.png" alt="make" width="1000"/>
 
 </br>
 
@@ -441,7 +448,7 @@ $ git commit - m "success on make with stubs"
 
 __Note__: The importance of having __regular__ `commit`s in your project cannot be overstated. This is a large part of the evaluation of your project by me.
 
-<img src="images/lab0_images/22-git_add_commit.png" alt="git_add_commit" width="1000"/>
+<img src="images/mac_images/22-git_add_commit.png" alt="git_add_commit" width="1000"/>
 
 </br>
 
@@ -533,7 +540,7 @@ This will display two successful test runs: one for the `stub` test that was alr
 
 This means that our test function returned `true`.
 
-<img src="images/lab0_images/27-make_run_testB.png" alt="make_run_testB" width="1000"/>
+<img src="images/mac_images/27-make_run_testB.png" alt="make_run_testB" width="1000"/>
 
 ---
 
@@ -635,7 +642,7 @@ Obviously, you are done in the testB.cpp file, do not forget to add the `TEST()`
 
 Let's `make` and run `testB` to make sure all test functions pass.
 
-<img src="images/lab0_images/30-PASSED_three_tests.png" alt="PASSED_three_tests" width="1000"/>
+<img src="images/mac_images/30-PASSED_three_tests.png" alt="PASSED_three_tests" width="1000"/>
 
 </br>
 
@@ -658,7 +665,7 @@ Now that we have implemented all the functions that are used in `basic_test.cpp`
 
 I cannot overemphasize how important it is for this test to be able to compile and run __without__ your editing it in any way. If your project cannot compile and run `basic_test`, the grader will not be able to run your project.
 
-<img src="images/lab0_images/31-PASSED-basic_test.png" alt="PASSED-basic_test" width="1000"/>
+<img src="images/mac_images/31-PASSED-basic_test.png" alt="PASSED-basic_test" width="1000"/>
 
 </br>
 

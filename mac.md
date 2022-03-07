@@ -434,6 +434,63 @@ Hopefully, your `cmake` will run without any problems and it will tell you that 
 
 </br>
 
+### Install cmake tools
+
+Another method to build project. If you have not already install CMake and CMake Tools in VS Code:
+
+1. On the left of VS Code, click on `extensions`.
+1. Search 'cmake'.
+1. Install `CMake` and `CMake Tools`
+
+<img src="images/mac_images/b-02-cmake_tools_1.png" alt="cmake_tools" width="200"/>
+
+</br>
+
+#### Rebuild
+You should be able to right click on `CMakeLists.txt` and click on `Clean Reconfigure All Projects`:
+
+<img src="images/mac_images/b-02-cmake_tools_2.png" alt="cmake_tools" width="200"/>
+
+</br>
+
+A prompt should appear on top, just click on similar compiler to:
+
+- MAC: `Clang 13.0.0`
+- WIN: `GCC 6.3.0 mingw`
+
+
+<img src="images/mac_images/b-02-cmake_tools_3.png" alt="cmake_tools" width="1000"/>
+
+<img src="images/mac_images/b-02-cmake_tools_4.png" alt="cmake_tools" width="1000"/>
+
+</br>
+
+If it does not show up, you will need to manually select it on the bottom there is a button as shown:
+
+<img src="images/mac_images/b-02-cmake_tools_5.png" alt="cmake_tools" width="200"/>
+
+</br>
+
+- If it does not show `Clang 13.0.0` or `GCC 6.3.0 mingw32` click on that button and select it.
+- If there is no option, try scanning for kits and try again.
+- If it still doesn’t show up, you probably messed up your Mingw installation.
+
+The output should look something like this:
+
+<img src="images/mac_images/b-02-cmake_tools_6.png" alt="cmake_tools" width="1000"/>
+
+</br>
+
+Some buttons should be on the bottom:
+
+<img src="images/mac_images/b-02-cmake_tools_7.png" alt="cmake_tools" width="1000"/>
+
+</br>
+
+__Note__: With every future project, just `Clean Reconfigure All Projects` and everything should be more or less the same. __If there are any errors, just delete the build folder and retry__.
+
+</br>
+
 ### Step 7: Compile project
 
 Now, we are ready to compile project using `make`

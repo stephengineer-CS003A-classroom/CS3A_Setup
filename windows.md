@@ -102,6 +102,8 @@ To make sure git is installed correctly
 $ git --version
 ```
 
+<img src="images/win_images/git-00-git_version.png" alt="download_git" width="1000"/>
+
 <br/>
 
 ### Login git

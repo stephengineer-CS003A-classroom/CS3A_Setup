@@ -29,6 +29,16 @@ $ brew install git
 
 </br>
 
+### Check git installation
+
+To make sure git is installed correctly
+
+```sh 
+$ git --version
+```
+
+</br>
+
 ### Login git
 
 Login git with username and email address:

@@ -61,67 +61,61 @@ Choose Use OpenSSH.
 </br>
 
 Choose Default (fast-forward or merge).
-<br/><br/>
 
-> <img src="images/win_images/git-01-download_git_06.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/git-01-download_git_06.png" alt="download_git" width="1000"/>
 
 </br>
 
 Choose Git Credential Manager Core
-<br/><br/>
 
-> <img src="images/win_images/git-01-download_git_07.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/git-01-download_git_07.png" alt="download_git" width="1000"/>
 
 </br>
 
 And Install!
-<br/><br/>
 
-> <img src="images/win_images/git-01-download_git_08png.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/git-01-download_git_08png.png" alt="download_git" width="1000"/>
 
-</br>
+<img src="images/win_images/git-01-download_git_10.png" alt="download_git" width="400"/>
 
-> <img src="images/win_images/git-01-download_git_10.png" alt="vscode_after_cloning" width="400"/>
-> <img src="images/win_images/git-01-download_git_11.png" alt="vscode_after_cloning" width="400"/>
+<img src="images/win_images/git-01-download_git_11.png" alt="download_git" width="400"/>
 
 </br>
 
 When it is done installing, click Finish.
-<br/><br/>
 
-> <img src="images/win_images/git-01-download_git_12.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/git-01-download_git_12.png" alt="download_git" width="1000"/>
 
 </br>
 
 You may view release notes if you want.
 
-> <img src="images/win_images/git-01-download_git_13.png" alt="vscode_after_cloning" width="1000"/>
-
-<br/><br/>
-
-## Tell git who you are:
-
-Give git your name and email address:
-
-```
-git config --global user.name "barkeshli, sassan"
-git config --global user.email sxbarkeshli@pasadena.edu
-
-```
-
-<br/><br/>
-</br>
-
-## Check the version of the git again:
-
-To make sure `git` is intalled correctly, run `git --version` again:
-<br/><br/>
-
-> <img src="images/win_images/git-02-git_version.png" alt="vscode_after_cloning" width="1000"/>
+<img src="images/win_images/git-01-download_git_13.png" alt="download_git" width="1000"/>
 
 </br>
 
-</br></br></br></br></br></br>
+### Check git installation
+
+To make sure git is installed correctly
+
+```sh 
+$ git --version
+```
+
+<br/>
+
+### Login git
+
+Login git with username and email address:
+
+```sh
+$ git config --global user.name "stephengineer"
+$ git config --global user.email swang03@pasadena.edu
+```
+
+---
+
+</br>
 
 <a name="win_installing_cmake"></a>
 

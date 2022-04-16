@@ -14,12 +14,15 @@ Shows which files git is tracking and which files have been added to a commit
 **git status**
 
 This is how it will look if you haven't edited any files
+
 ![](./images/git_commands/status-no-change.png)
 
 This is how it will look if you have edited files, but not added them
+
 ![](./images/git_commands/status-no-add.png)
 
 This is how it woll look when you have added a change
+
 ![](./images/git_commands/status-after-add.png)
 
 ### `git add`:

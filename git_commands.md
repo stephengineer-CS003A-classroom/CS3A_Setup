@@ -48,6 +48,7 @@ Adds selected files to be committed.
 Uploads all your local repo commits to the github website. Even if you have committed work, it will not be available on github until you push it. Note: Once a commit has been pushed to github, only the time/date it was committed will be shown, not the time/date it was pushed
 
 **`git push`**
+
 ![](./images/git_commands/push.png)
 
 ### `.gitignore`

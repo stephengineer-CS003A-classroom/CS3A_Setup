@@ -347,7 +347,7 @@ $ g++ --version
 
 # ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Accepting the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
 
-Here is the **assignment link** for [CS3A]() and here is the link for [CS8]()
+Here is the **assignment link** for [CS3A](https://github.com/stephengineer-CS003A-classroom/CS3A_Assignments) and here is the link for [CS8]()
 
 </br>
 

@@ -35,6 +35,8 @@ If you see "brew is not found", then you need to install brew.
 eval $(/opt/homebrew/bin/brew shellenv)
 ```
 
+You need to install **Xcode** from App Store before you use other IDE.
+
 </br>
 
 ### Check git installation

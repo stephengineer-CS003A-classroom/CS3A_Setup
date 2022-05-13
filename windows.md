@@ -873,7 +873,7 @@ Let's implement all other functions in `array_functions.cpp`:
 
 ```c++
 void _append(int a[], int& size, int append_me) {
-  a[size] = append_me;
+  a[size++] = append_me;
 }
 
 int _find(const int a[], int size, int find_me) {

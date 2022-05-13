@@ -28,7 +28,7 @@ We use [homebrew](https://brew.sh/) to [install git](https://git-scm.com/downloa
 $ brew install git
 ```
 
-If you see "brew is not found", then you need to install brew.
+If you see "brew: command not found", then you need to install brew.
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

@@ -31,8 +31,14 @@ $ brew install git
 If you see "brew: command not found", then you need to install brew.
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-eval $(/opt/homebrew/bin/brew shellenv)
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# The following two lines for Apple M1 Processor
+
+# you can find the following command in terminal
+$ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/YOUR_DEVICE_NAME/.zprofile
+
+$ eval $(/opt/homebrew/bin/brew shellenv)
 ```
 
 You need to install **Xcode** from App Store before you use other IDE.
@@ -57,7 +63,7 @@ Login git with username and email address:
 
 ```sh
 $ git config --global user.name "stephengineer"
-$ git config --global user.email swang03@pasadena.edu
+$ git config --global user.email "swang03@pasadena.edu"
 ```
 
 ---
@@ -425,25 +431,7 @@ Using the terminal in this way is very convenient.
 
 ### Step 6: Build project
 
-```sh
-# under project folder: ./00_lab_0
-# create build folder
-$ mkdir build
-
-# go to build folder
-$ cd build
-
-# cmake project
-$ cmake ..
-```
-
-This will run `cmake` on your _parent_ folder. (that's what `..` means, `cmake ..` means run `cmake` on my parent folder) `cmake` creates a bunch of files and you do not want these files in the root folder of project. Running `cmake` from `build/` will make sure all your auxiliary files are created inside the `build/` folder.
-
-Hopefully, your `cmake` will run without any problems and it will tell you that "Build files are written to `. . . build/`"
-
-</br>
-
-### Install cmake tools
+#### Install cmake tools
 
 Another method to build project. If you have not already install CMake and CMake Tools in VS Code:
 
@@ -496,14 +484,7 @@ __Note__: With every future project, just `Clean Reconfigure All Projects` and e
 
 ### Step 7: Compile project
 
-Now, we are ready to compile project using `make`
-
-```sh
-# under project folder: ./00_lab_0
-
-# compile project
-$ make
-```
+Now, we are ready to compile project by clicking on **Run** (triangle) button.
 
 <img src="images/mac_images/21-make.png" alt="make" width="1000"/>
 

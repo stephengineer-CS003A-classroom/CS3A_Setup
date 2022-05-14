@@ -431,6 +431,8 @@ $ cd 00_lab_0-stephengineer
 
 # open VSCode
 $ code .
+
+Without using command, you can just double click on the VSCode app to open it.
 ```
 
 <img src="images/mac_images/01-vscode_after_cloning.png" alt="vscode_after_cloning" width="1000"/>
@@ -606,6 +608,7 @@ Add these function signatures to the `array_functions.h`
 
 #include <iostream>
 #include <iomanip>
+#include <cassert>
 
 using namespace std;
 
@@ -670,27 +673,9 @@ Using the terminal in this way is very convenient.
 
 ### Step 6: Build project
 
-```sh
-# under project folder: ./00_lab_0
-# create build folder
-$ mkdir build
+#### Install cmake tools
 
-# go to build folder
-$ cd build
-
-# cmake project
-$ cmake ..
-```
-
-This will run `cmake` on your _parent_ folder. (that's what `..` means, `cmake ..` means run `cmake` on my parent folder) `cmake` creates a bunch of files and you do not want these files in the root folder of project. Running `cmake` from `build/` will make sure all your auxiliary files are created inside the `build/` folder.
-
-Hopefully, your `cmake` will run without any problems and it will tell you that "Build files are written to `. . . build/`"
-
-</br>
-
-### Install cmake tools
-
-Another method to build project. If you have not already install CMake and CMake Tools in VS Code:
+An easy method to build project. If you have not already install CMake and CMake Tools in VS Code:
 
 1. On the left of VS Code, click on `extensions`.
 1. Search `cmake`.
@@ -741,14 +726,7 @@ __Note__: With every future project, just `Clean Reconfigure All Projects` and e
 
 ### Step 7: Compile project
 
-Now, we are ready to compile project using `make`
-
-```sh
-# under project folder: ./00_lab_0
-
-# compile project
-$ make
-```
+Now, we are ready to compile project by clicking on **Run** (triangle) button.
 
 <img src="images/mac_images/21-make.png" alt="make" width="1000"/>
 

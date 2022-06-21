@@ -16,7 +16,7 @@
 
 <a name="mac_installing_git"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Installing git ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+## Installing git
 
 </br>
 
@@ -72,7 +72,7 @@ $ git config --global user.email "swang03@pasadena.edu"
 
 <a name="mac_installing_cmake"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Installing cmake ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+## Installing cmake
 
 </br>
 
@@ -106,9 +106,9 @@ If you do not get a response similar to this, then you do not have `cmake` on yo
 
 <a name="accepting_the_assignment"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Accepting the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+## Accepting the assignment
 
-Here is the **assignment link** for [CS3A](https://github.com/stephengineer-CS003A-classroom/CS3A_Assignments) and here is the link for [CS8]()
+Here is the **assignment link** for [CS3A](https://github.com/stephengineer-CS003A-classroom/CS3A_Assignments).
 
 </br>
 
@@ -149,7 +149,7 @@ __Note__: Bookmark this page to know how to get here. We'll need to check in her
 
 <a name="cloning_the_assignment"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Cloning the assignment ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+## Cloning the assignment
 
 ### Get git link of assignment
 
@@ -178,7 +178,7 @@ $ git clone https://github.com/stephengineer-CS003A/00_lab_0-stephengineer.git
 
 <a name="project_organization"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Project Organization ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+## Project Organization
 
 </br>
 
@@ -246,7 +246,7 @@ On the left panel (Explorer) you will find the `main.cpp` on the root folder, an
 
 <a name="git_commands"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Git commands ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+## Git commands
 
 One of the main tasks in this class is tracking changes made to the project. We need to know what happened when and what changed. This is both for your peace of mind (helps you not lose your project accidentally) and for me to track your progress through the course. We use [git](https://git-scm.com/) to track changes.
 
@@ -323,7 +323,7 @@ __Note__: `commit` and `push` often: make sure you `commit` your changes after c
 
 <a name="getting_started"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Getting started ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+## Getting started
 
 </br>
 
@@ -331,7 +331,7 @@ __Note__: `commit` and `push` often: make sure you `commit` your changes after c
 
 You will be supplied with a <a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a> file. You will copy this file and overwrite the existing _generic_ `basic_test.cpp` in your project folder. After this, you will __NEVER__ edit the `basic_test.cpp` file.
 
-<a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a> demonstrtes the functionality of the project and gives you an opportunity to make sure your function signatures and class declarations match those of the grader.
+<a href="./basic_test.cpp" target="_blank">`basic_test.cpp`</a> demonstrates the functionality of the project and gives you an opportunity to make sure your function signatures and class declarations match those of the grader.
 You should be able to compile and run the `basic_test.cpp` with your functions.
 
 Pay special attention to the `#include` path at the top. Your file structure has to be __exactly__ the same as the one depicted here.
@@ -342,7 +342,7 @@ Pay special attention to the `#include` path at the top. Your file structure has
 
 ### Step 2: Create project folder
 
-Create a new function folder under the `includes/` folde and name this folder to `array_functions`. This is the directory you will add your `.h` and `.cpp` files.
+Create a new function folder under the `includes/` folder and name this folder to `array_functions`. This is the directory you will add your `.h` and `.cpp` files.
 
 <br>
 
@@ -514,7 +514,7 @@ Now, you can implement functions one by one in `array_functions.cpp` and write t
 
 <a name="completing_the_project"></a>
 
-# ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Completing the project ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+)
+## Completing the project
 
 </br>
 
@@ -726,7 +726,7 @@ I cannot overemphasize how important it is for this test to be able to compile a
 
 </br>
 
-# Autograder Status
+## Autograder Status
 
 You can keep track of the grading status of your project on the assignment page. A yellow dot means that the tests are still being compiled and run by the autograder.This shouldn't take more than a minute or two. You can refresh the page to update the status. A green checkmark means that all your tests have passed. A red x means that at least one test failed.
 
